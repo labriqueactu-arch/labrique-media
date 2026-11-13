@@ -140,9 +140,11 @@ async (visages) => {
 
 
 def main():
-    if len(sys.argv) != 3:
+    args = [a for a in sys.argv[1:] if a != "--essai"]
+    essai = "--essai" in sys.argv  # rendu de contrôle : le registre des photos n'est pas mis à jour
+    if len(args) != 2:
         sys.exit(__doc__)
-    fiche, out = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve()
+    fiche, out = Path(args[0]).resolve(), Path(args[1]).resolve()
     d = json.loads(fiche.read_text(encoding="utf-8"))
     comp, props = d.get("composant"), dict(d.get("props") or {})
     if comp not in COMPOSANTS:
@@ -164,6 +166,18 @@ def main():
     props = resoudre(props, base, chemins)
     if not chemins:
         sys.exit("ERREUR : aucune photo dans la fiche. Chaque post montre une photo libre du joueur.")
+    # Une photo ne sert qu'une fois (banque/utilisees.json).
+    import photos as registre
+    uniques = list(dict.fromkeys(p for p in chemins if "_fantome" not in p.stem))
+    sources = d.get("source_photo") or []
+    sources = [sources] if isinstance(sources, dict) else sources
+    if not sources and not essai:
+        sys.exit("ERREUR : la fiche doit déclarer \"source_photo\": {\"url\", \"auteur\", \"joueur\"} pour chaque photo.")
+    for i, p in enumerate(uniques):
+        src = sources[min(i, len(sources) - 1)] if sources else None
+        e = registre.conflit(p, src, post=out.stem)
+        if e:
+            sys.exit(f"ERREUR : {p.name} : {registre.message(e)}")
     visages, note = {}, []
     try:
         from faces import detect
@@ -205,6 +219,9 @@ def main():
     Image.open(png).convert("RGB").save(out, "JPEG", quality=92, optimize=True, progressive=True)
     png.unlink()
     html_path.unlink()
+    if not essai:
+        for i, p in enumerate(uniques):
+            registre.marquer(p, sources[min(i, len(sources) - 1)], out.stem)
     print(json.dumps({"ok": True, "sortie": str(out), "composant": comp, "montage": m or "lumiere", "visages": "; ".join(note)}, ensure_ascii=False))
 
 
