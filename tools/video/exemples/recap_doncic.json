@@ -1,0 +1,50 @@
+{
+ "format": "recap",
+ "duree": 11.5,
+ "verdict": null,
+ "photo": "../../../banque/doncic-2/detoure.png",
+ "source_photo": {
+  "joueur": "Luka Dončić",
+  "auteur": "Erik Drost",
+  "url": "https://commons.wikimedia.org/wiki/File:Luka_Doncic_Lakers_Deandre_Hunter_Donovan_Mitchell_Cavaliers_Jan_2026.jpg"
+ },
+ "cadre": {
+  "x": 250,
+  "y": 470,
+  "l": 960
+ },
+ "surtitre": "Interceptions à *Atlanta*",
+ "chiffre": "5",
+ "prenom": "Luka",
+ "nom": "Dončić",
+ "stats": [
+  {
+   "a": 32,
+   "suffixe": " pts"
+  },
+  {
+   "a": 10,
+   "suffixe": " passes"
+  }
+ ],
+ "punchline": "Sans Reaves, Luka a tout pris.",
+ "fin": "Ça rentre ou ça *brique* ?",
+ "voix": {
+  "modele": "fr_FR-tom-medium",
+  "vitesse": 0.88,
+  "repliques": [
+   {
+    "texte": "Cinq interceptions à Atlanta."
+   },
+   {
+    "texte": "Luka Donchitch. Trente-deux points, dix passes."
+   },
+   {
+    "texte": "Sans Reaves, les Lakers gagnent quand même."
+   },
+   {
+    "texte": "Luka défenseur ? Ça rentre, ou ça brique ?"
+   }
+  ]
+ }
+}

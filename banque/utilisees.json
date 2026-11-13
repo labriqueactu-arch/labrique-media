@@ -58,7 +58,7 @@
  {
   "joueur": "Luka Dončić",
   "auteur": "Erik Drost",
-  "url": null,
+  "url": "https://commons.wikimedia.org/wiki/File:Luka_Doncic_(55095317361)_(cropped).jpg",
   "dhash": null,
   "post": "2026-11-10-doncic-5 (publié le 13/11)",
   "date": "2026-11-13"
@@ -70,5 +70,13 @@
   "dhash": null,
   "post": "2026-11-11-tatum-brown (non publié)",
   "date": "2026-11-11"
+ },
+ {
+  "joueur": "Luka Dončić",
+  "auteur": "Erik Drost",
+  "url": "https://commons.wikimedia.org/wiki/File:Luka_Doncic_and_Nae'Qwan_Tomlin_(55095317361).jpg",
+  "dhash": null,
+  "post": "original de la photo du post 2026-11-10-doncic-5",
+  "date": "2026-11-13"
  }
 ]
