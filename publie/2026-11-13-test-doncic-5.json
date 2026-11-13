@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-13-test-doncic-5.json",
+ "heure_prevue": "2026-11-13T23:47:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18388403497225134",
+   "lien": "https://www.instagram.com/p/DfsvNbplTp6/",
+   "statut": "publié",
+   "heure": "23:47"
+  },
+  "facebook": {
+   "id": "1473274879194688_122102273223545766",
+   "lien": "https://www.facebook.com/122102273253545766/posts/122102273223545766",
+   "statut": "publié",
+   "heure": "23:47"
+  },
+  "threads": {
+   "id": "18131598421868493",
+   "lien": "https://www.threads.com/@labrique.hoops/post/DfsvPBekcyH",
+   "statut": "publié",
+   "heure": "23:47"
+  }
+ },
+ "statut": "publié"
+}
