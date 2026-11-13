@@ -1,0 +1,30 @@
+{
+ "id": "2026-11-14-essai-doncic",
+ "essai": true,
+ "heure": "2026-11-14T23:00:00+01:00",
+ "photos": {
+  "post": {"fichier": "File:Luka Doncic Lakers Jarrett Allen Donovan Mitchell Cavaliers Jan 2026 (cropped).jpg", "joueur": "Luka Dončić"},
+  "video": {"fichier": "File:Luka Doncic Lakers Deandre Hunter Donovan Mitchell Cavaliers Jan 2026.jpg", "joueur": "Luka Dončić", "recadrage": [0.6, 0.12, 0.95, 1.0]}
+ },
+ "post": {
+  "composant": "PostChiffre",
+  "props": {
+   "montage": "lumiere", "chiffre": "5", "photo": "@post", "fantome": "auto",
+   "surtitre": "Interceptions à *Atlanta*", "prenom": "Luka", "nom": "Dončić",
+   "pastilles": ["32 pts · 10 passes", "Lakers 10-2"], "punchline": "Sans Reaves, Luka a tout pris.",
+   "meta": "LB · LE CHIFFRE / NBA", "format": "LE CHIFFRE"
+  }
+ },
+ "video": {
+  "format": "recap", "duree": 12.5, "verdict": null, "photo": "@video",
+  "cadre": {"x": 250, "y": 470, "l": 960},
+  "surtitre": "Interceptions à *Atlanta*", "chiffre": "5", "prenom": "Luka", "nom": "Dončić",
+  "stats": [{"a": 32, "suffixe": " pts"}, {"a": 10, "suffixe": " passes"}],
+  "punchline": "Sans Reaves, Luka a tout pris.", "fin": "Ça rentre ou ça *brique* ?",
+  "voix": {"id": "Xy5q4w05TJGcKXPWeWoz", "modele": "eleven_v4", "ecart": 0.2, "repliques": [
+   {"texte": "Cinq interceptions à Atlanta."}, {"texte": "Luka Dončić : trente-deux points, dix passes."},
+   {"texte": "Sans Austin Reaves, les Lakers gagnent quand même."}, {"texte": "Luka en défense ? Ça rentre, ou ça brique ?"}]}
+ },
+ "legende": "ESSAI\n\n#LaBrique", "threads": "ESSAI", "alt": "Essai",
+ "legende_reel": "ESSAI REEL\n\n#LaBrique", "threads_reel": "ESSAI REEL"
+}

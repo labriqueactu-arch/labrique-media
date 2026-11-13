@@ -332,8 +332,8 @@ if __name__ == "__main__":
     try:
         if a[0] == "verifier":
             ok = verifier()
-        elif a[0] == "publier" and len(a) == 2:
-            ok = publier(a[1])
+        elif a[0] == "publier" and len(a) >= 2:
+            ok = all([publier(f) for f in sorted(a[1:])])
         elif a[0] == "echeances":
             ok = echeances()
         elif a[0] == "tester-reel" and len(a) == 2:
