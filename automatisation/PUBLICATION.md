@@ -1,6 +1,6 @@
 # Publication directe (sans Metricool)
 
-La Brique publie sur Instagram, Facebook et Threads par les API officielles de Meta, gratuites. Le quota Instagram est de 50 publications par 24 heures glissantes selon la référence de l'API (la page générale annonce 100). Un carrousel compte pour une publication. On en utilise 2 par jour.
+La Brique publie sur Instagram, Facebook et Threads par les API officielles de Meta, gratuites. Le quota Instagram est de 100 publications par 24 heures glissantes (lu sur le compte le 13 novembre 2026). Un carrousel compte pour une publication. On en utilise 2 par jour.
 
 ## Comment ça tourne
 
