@@ -1,0 +1,23 @@
+{
+ "id": "2026-11-14-essai-doncic",
+ "commande": "a_produire/2026-11-14-essai-doncic.json",
+ "date": "2026-11-13T23:49:23",
+ "ok": true,
+ "erreurs": [],
+ "post": "posts/2026-11-14-essai-doncic.jpg",
+ "reel": "posts/videos/2026-11-14-essai-doncic.mp4",
+ "couverture": "posts/videos/2026-11-14-essai-doncic-cover.jpg",
+ "reel_info": {
+  "duree": 12.5,
+  "taille_mo": 7.49,
+  "lufs": -14.8,
+  "ok": true,
+  "sortie": "/home/runner/work/labrique-media/labrique-media/posts/videos/2026-11-14-essai-doncic.mp4",
+  "couverture": "/home/runner/work/labrique-media/labrique-media/posts/videos/2026-11-14-essai-doncic-cover.jpg"
+ },
+ "publication": {
+  "post": "2026-11-14T22:50:00+01:00",
+  "reel": "2026-11-14T23:00:00+01:00"
+ },
+ "refus": []
+}
