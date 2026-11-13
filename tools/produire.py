@@ -126,7 +126,7 @@ def ecrire(p, d):
 
 
 def produire(chemin):
-    chemin = Path(chemin)
+    chemin = Path(chemin).resolve()
     C = json.loads(chemin.read_text(encoding="utf-8"))
     id_ = C["id"]
     rapport_p = RACINE / "produit" / f"{id_}.json"

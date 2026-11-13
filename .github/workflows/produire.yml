@@ -69,7 +69,7 @@ jobs:
         run: |
           git config user.name "La Brique (production)"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add posts a_publier produit banque
+          for d in posts a_publier produit banque; do [ -e "$d" ] && git add "$d"; done
           git diff --cached --quiet || git commit -q -m "Production : ${{ steps.liste.outputs.commandes }}"
           for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
       - name: Lancement de la publication
