@@ -14,7 +14,7 @@ Les saisies sont masquées. Rien n'est écrit sur le disque.
 """
 import getpass, json, os, subprocess, sys, urllib.error, urllib.parse, urllib.request
 
-DEPOT = "Mokamo2023/labrique-media"
+DEPOT = "labriqueactu-arch/labrique-media"
 V = os.environ.get("GRAPH_VERSION", "v27.0")
 FB = f"https://graph.facebook.com/{V}"
 PAGE = "La Brique - Hoops"

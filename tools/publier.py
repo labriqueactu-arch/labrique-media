@@ -37,7 +37,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 RACINE = Path(__file__).resolve().parent.parent
-DEPOT = os.environ.get("GITHUB_REPOSITORY", "Mokamo2023/labrique-media")
+DEPOT = os.environ.get("GITHUB_REPOSITORY", "labriqueactu-arch/labrique-media")
 BRANCHE = os.environ.get("BRANCHE", "main")
 RAW = f"https://raw.githubusercontent.com/{DEPOT}/{BRANCHE}/"
 V = os.environ.get("GRAPH_VERSION", "v27.0")
