@@ -51,7 +51,7 @@
     h('div', { id: 'logo', key: 'logo', className: 'lb-abs', style: { left: 60, top: 262 } }, h(L.Logo, { taille: 64 })),
     h('div', { id: 'surtitre', key: 'surtitre', className: 'lb-abs', style: { left: 60, top: 372, fontSize: 44 } },
       h('div', { className: 'lb-surtitre', style: { fontSize: 44 } }, h('span', { className: 'lb-surtitre-filet' }), h('span', null, md(F.surtitre)))),
-    h('div', { id: 'nom', key: 'nom', className: 'lb-abs', style: { left: 60, top: 1130 } }, h(L.NomJoueur, { prenom: F.prenom, nom: F.nom, taille: 118 })),
+    h('div', { id: 'nom', key: 'nom', className: 'lb-abs', style: { left: 90, top: 1130 } }, h(L.NomJoueur, { prenom: F.prenom, nom: F.nom, taille: 118 })),
     h('div', { id: 'stats', key: 'stats', className: 'lb-abs lb-pastilles', style: { left: 60, top: 1290 } },
       F.stats.map(function (s, i) {
         return h('span', { key: i, id: 'stat' + i, className: 'lb-pastille ' + (i ? 'lb-pastille-contour' : 'lb-pastille-pleine'), style: { fontSize: 52, display: 'inline-block' } },
@@ -86,7 +86,7 @@
     pose('surtitre', { o: k(t, [[T.joueur - .3, 1], [T.joueur, 0], [boucle, 0], [D, 1]]), x: k(t, [[T.joueur - .3, 0], [T.joueur, -40]]) });
     // nom et stats
     var nIn = T.joueur, nOut = T.punch - 0.1;
-    pose('nom', { o: k(t, [[nIn, 0], [nIn + .35, 1], [nOut - .25, 1], [nOut, 0]]), x: k(t, [[nIn, -90], [nIn + .45, 0, 'out'], [nOut - .25, 0], [nOut, -60, 'in']]) });
+    pose('nom', { o: k(t, [[nIn, 0], [nIn + .35, 1], [nOut - .25, 1], [nOut, 0]]), x: k(t, [[nIn, -40], [nIn + .45, 0, 'out'], [nOut - .25, 0], [nOut, -30, 'in']]) });
     F.stats.forEach(function (s, i) {
       var t0 = T.stats[i];
       pose('stat' + i, { o: k(t, [[t0, 0], [t0 + .12, 1], [nOut - .25, 1], [nOut, 0]]), s: k(t, [[t0, .6], [t0 + .3, 1, 'back']]) });

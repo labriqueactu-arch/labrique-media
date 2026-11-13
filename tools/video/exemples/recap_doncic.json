@@ -1,6 +1,6 @@
 {
  "format": "recap",
- "duree": 11.5,
+ "duree": 12.5,
  "verdict": null,
  "photo": "../../../banque/doncic-2/detoure.png",
  "source_photo": {
@@ -30,20 +30,22 @@
  "punchline": "Sans Reaves, Luka a tout pris.",
  "fin": "Ça rentre ou ça *brique* ?",
  "voix": {
-  "modele": "fr_FR-tom-medium",
-  "vitesse": 0.88,
+  "id": "Xy5q4w05TJGcKXPWeWoz",
+  "nom": "Max - Charismatic & Friendly",
+  "modele": "eleven_v4",
+  "ecart": 0.2,
   "repliques": [
    {
     "texte": "Cinq interceptions à Atlanta."
    },
    {
-    "texte": "Luka Donchitch. Trente-deux points, dix passes."
+    "texte": "Luka Dončić : trente-deux points, dix passes."
    },
    {
-    "texte": "Sans Reaves, les Lakers gagnent quand même."
+    "texte": "Sans Austin Reaves, les Lakers gagnent quand même."
    },
    {
-    "texte": "Luka défenseur ? Ça rentre, ou ça brique ?"
+    "texte": "Luka en défense ? Ça rentre, ou ça brique ?"
    }
   ]
  }
