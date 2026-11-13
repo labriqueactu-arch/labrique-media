@@ -15,7 +15,7 @@ Variables d'environnement (secrets GitHub) :
   IG_USER_ID        identifiant du compte Instagram professionnel
   FB_PAGE_ID        identifiant de la page Facebook
   THREADS_TOKEN     jeton Threads longue durée
-  GRAPH_VERSION     facultatif, v25.0 par défaut
+  GRAPH_VERSION     facultatif, v27.0 par défaut
 
 Fiche a_publier/AAAA-MM-JJ-sujet.json :
   {
@@ -40,7 +40,7 @@ RACINE = Path(__file__).resolve().parent.parent
 DEPOT = os.environ.get("GITHUB_REPOSITORY", "Mokamo2023/labrique-media")
 BRANCHE = os.environ.get("BRANCHE", "main")
 RAW = f"https://raw.githubusercontent.com/{DEPOT}/{BRANCHE}/"
-V = os.environ.get("GRAPH_VERSION", "v25.0")
+V = os.environ.get("GRAPH_VERSION", "v27.0")
 FB = f"https://graph.facebook.com/{V}"
 TH = "https://graph.threads.net/v1.0"
 BXL = ZoneInfo("Europe/Brussels")
