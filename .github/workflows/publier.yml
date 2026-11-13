@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "verifier (aucune publication) ou echeances"
+        description: "verifier, echeances ou tester-reel posts/videos/x.mp4 (aucune publication sauf echeances)"
         default: verifier
 
 concurrency:
@@ -33,9 +33,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Vérification des comptes
-        if: github.event_name == 'workflow_dispatch' && inputs.action == 'verifier'
-        run: python3 tools/publier.py verifier
+      - name: Commande manuelle (verifier, tester-reel chemin.mp4)
+        if: github.event_name == 'workflow_dispatch' && inputs.action != 'echeances'
+        run: python3 tools/publier.py ${{ inputs.action }}
       - name: Publication
         if: github.event_name != 'workflow_dispatch' || inputs.action == 'echeances'
         run: |

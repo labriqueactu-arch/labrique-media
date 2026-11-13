@@ -297,6 +297,21 @@ def verifier():
     return ok
 
 
+def tester_reel(chemin):
+    """Crée les conteneurs Reel Instagram et vidéo Threads sans rien publier, pour valider l'hébergement."""
+    url = url_media(chemin)
+    attendre_media(url)
+    tok, ig = env("META_PAGE_TOKEN"), env("IG_USER_ID")
+    c = appel("POST", f"{FB}/{ig}/media", {"media_type": "REELS", "video_url": url, "caption": "test", "access_token": tok})["id"]
+    ig_attendre(c, tok)
+    print(f"Instagram : conteneur Reel {c} prêt (non publié, il expire seul en 24 h).")
+    th = env("THREADS_TOKEN")
+    c2 = appel("POST", f"{TH}/me/threads", {"media_type": "VIDEO", "video_url": url, "text": "test", "access_token": th})["id"]
+    th_attendre(c2, th)
+    print(f"Threads : conteneur vidéo {c2} prêt (non publié).")
+    return True
+
+
 def rafraichir_threads():
     r = appel("GET", f"{TH}/refresh_access_token", {"grant_type": "th_refresh_token", "access_token": env("THREADS_TOKEN")})
     jours = int(r.get("expires_in", 0)) // 86400
@@ -321,6 +336,8 @@ if __name__ == "__main__":
             ok = publier(a[1])
         elif a[0] == "echeances":
             ok = echeances()
+        elif a[0] == "tester-reel" and len(a) == 2:
+            ok = tester_reel(a[1])
         elif a[0] == "rafraichir-threads":
             ok = rafraichir_threads()
         else:
