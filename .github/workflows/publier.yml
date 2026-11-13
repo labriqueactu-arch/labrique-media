@@ -1,0 +1,61 @@
+name: Publication
+
+on:
+  push:
+    branches: [main]
+    paths: ["a_publier/**"]
+  schedule:
+    - cron: "*/15 * * * *"   # filet de sécurité : publie ce qui est arrivé à échéance
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "verifier (aucune publication) ou echeances"
+        default: verifier
+
+concurrency:
+  group: publication
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Vérification des comptes
+        if: github.event_name == 'workflow_dispatch' && inputs.action == 'verifier'
+        run: python3 tools/publier.py verifier
+      - name: Publication
+        if: github.event_name != 'workflow_dispatch' || inputs.action == 'echeances'
+        run: |
+          # Sur un push, on attend l'heure prévue de chaque nouvelle fiche ; sinon on publie ce qui est dû.
+          if [ "${{ github.event_name }}" = "push" ]; then
+            ok=0
+            for f in $(git diff --name-only --diff-filter=AM ${{ github.event.before }} ${{ github.sha }} -- a_publier/ 2>/dev/null || ls a_publier/*.json); do
+              [ -f "$f" ] && { python3 tools/publier.py publier "$f" || ok=1; }
+            done
+            exit $ok
+          else
+            python3 tools/publier.py echeances
+          fi
+      - name: Enregistrement des résultats
+        if: always()
+        run: |
+          git add publie/ 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git config user.name "La Brique (publication)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Publication : résultats $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          exit 1

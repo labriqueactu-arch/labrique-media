@@ -1,0 +1,25 @@
+name: Jeton Threads
+
+# Le jeton Threads expire au bout de 60 jours. Ce workflow le prolonge chaque mois.
+# Il faut le secret SECRETS_PAT : jeton GitHub à grain fin, limité à ce dépôt, droit « Secrets : écriture ».
+on:
+  schedule:
+    - cron: "17 4 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prolonger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: jeton
+        run: python3 tools/publier.py rafraichir-threads
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      - run: gh secret set THREADS_TOKEN --body "$JETON" --repo "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+          JETON: ${{ steps.jeton.outputs.jeton }}
