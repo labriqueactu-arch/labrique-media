@@ -9,7 +9,7 @@ Usage :
 
 Rendu : scène HTML (tools/video/scene.js) avec les tokens, polices et composants du design system,
 animée par window.seek(t), capturée image par image par Playwright (30 i/s) et encodée par ffmpeg.
-Voix : Piper, modèle local tools/video/voix/<modele>.onnx (aucun appel réseau). Sons : tools/video/sons/.
+Voix : ElevenLabs (clé ELEVENLABS_API_KEY ou trousseau du Mac), répliques mises en cache. Sons : tools/video/sons/.
 Aucune image ni voix générée ne représente un joueur : le joueur est la photo libre détourée,
 la voix est celle d'un narrateur.
 
@@ -34,23 +34,53 @@ def erreur(msg):
     sys.exit("ERREUR : " + msg)
 
 
+def cle_elevenlabs():
+    """Clé lue dans l'environnement (GitHub Actions) ou le trousseau du Mac. Jamais affichée."""
+    import os
+    k = os.environ.get("ELEVENLABS_API_KEY", "").strip()
+    if not k and sys.platform == "darwin":
+        r = subprocess.run(["security", "find-generic-password", "-a", "labrique", "-s", "elevenlabs", "-w"], capture_output=True, text=True)
+        k = r.stdout.strip()
+    if not k:
+        erreur("clé ElevenLabs absente (ELEVENLABS_API_KEY ou trousseau « elevenlabs »)")
+    return k
+
+
+def tts(texte, v, sortie):
+    """Une réplique ElevenLabs en WAV 48 kHz, avec cache (on ne paie pas deux fois le même texte)."""
+    import hashlib, os, urllib.request, urllib.error
+    voix_id, modele = v["id"], v.get("modele", "eleven_v3")
+    reglages = v.get("reglages") or {"stability": 0.5, "similarity_boost": 0.8, "style": 0.3, "use_speaker_boost": True}
+    corps = {"text": texte, "model_id": modele, "voice_settings": reglages}
+    if v.get("langue"):
+        corps["language_code"] = v["langue"]
+    cache = Path(os.environ.get("LB_CACHE_VOIX", Path.home() / ".cache" / "labrique-voix"))
+    cache.mkdir(parents=True, exist_ok=True)
+    h = hashlib.sha256(json.dumps([voix_id, corps], sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:20]
+    mp3 = cache / f"{h}.mp3"
+    if not mp3.exists():
+        req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{voix_id}?output_format=mp3_44100_128",
+                                     data=json.dumps(corps).encode(), method="POST",
+                                     headers={"xi-api-key": cle_elevenlabs(), "Content-Type": "application/json", "Accept": "audio/mpeg", "User-Agent": "LaBrique/1.0"})
+        try:
+            mp3.write_bytes(urllib.request.urlopen(req, timeout=120).read())
+        except urllib.error.HTTPError as e:
+            erreur(f"ElevenLabs {e.code} : {e.read()[:300]!r}")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(mp3), "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le", str(sortie)], check=True)
+    return rogner(sortie)
+
+
 def voix(fiche, dossier):
-    """Synthétise chaque réplique ; renvoie [(t, chemin, durée)]."""
+    """Synthétise chaque réplique ; renvoie [(t, chemin, durée)]. Une réplique sans « t » suit la précédente."""
     v = fiche.get("voix") or {}
     if not v.get("repliques"):
         return []
-    modele = VIDEO / "voix" / f"{v.get('modele', 'fr_FR-tom-medium')}.onnx"
-    if not modele.exists():
-        erreur(f"voix absente : {modele}. Lis tools/video/VIDEO.md (section Voix).")
+    if not v.get("id"):
+        erreur("voix : il faut l'identifiant ElevenLabs de la voix (\"id\")")
     sortie = []
     for i, r in enumerate(v["repliques"]):
         p = dossier / f"voix{i}.wav"
-        res = subprocess.run([sys.executable, "-m", "piper", "-m", str(modele), "-f", str(p),
-                              "--length-scale", str(v.get("vitesse", 0.92)), "--sentence-silence", "0.05"],
-                             input=r["texte"], text=True, capture_output=True)
-        if res.returncode or not p.exists():
-            erreur("Piper : " + res.stderr[-300:])
-        d = rogner(p)
+        d = tts(r["texte"], v, p)
         t0 = float(r["t"]) if r.get("t") is not None else (sortie[-1][0] + sortie[-1][2] + v.get("ecart", 0.22) if sortie else 0.15)
         sortie.append((round(t0, 2), p, d))
     for (t0, _, d0), (t1, _, _) in zip(sortie, sortie[1:]):
@@ -58,7 +88,7 @@ def voix(fiche, dossier):
             erreur(f"la réplique de {t0} s dure {d0:.2f} s et chevauche la suivante ({t1} s) : raccourcis le texte ou décale")
     t_last, _, d_last = sortie[-1]
     if t_last + d_last > fiche["duree"] - 0.2:
-        erreur(f"la voix finit à {t_last + d_last:.2f} s, après la fin de la vidéo ({fiche['duree']} s)")
+        erreur(f"la voix finit à {t_last + d_last:.2f} s, après la fin de la vidéo ({fiche['duree']} s) : raccourcis le texte")
     return sortie
 
 
@@ -70,10 +100,11 @@ def rogner(p, seuil=0.012):
         x = np.frombuffer(w.readframes(n), dtype="<i2")
     a = np.abs(x.astype(float)) / 32768
     fort = np.nonzero(a > seuil)[0]
+    debut = max(0, (fort[0] if len(fort) else 0) - int(0.03 * sr))
     fin = min(len(x), (fort[-1] if len(fort) else len(x)) + int(0.06 * sr))
     with wave.open(str(p), "wb") as w:
-        w.setnchannels(ch); w.setsampwidth(sw); w.setframerate(sr); w.writeframes(x[:fin].tobytes())
-    return fin / sr
+        w.setnchannels(ch); w.setsampwidth(sw); w.setframerate(sr); w.writeframes(x[debut:fin].tobytes())
+    return (fin - debut) / sr
 
 
 def temps(fiche, repl):
@@ -142,7 +173,7 @@ def audio(fiche, repl, T, dossier, sortie):
     n = len(ev)
     for j, (t0, p, _) in enumerate(repl):
         entrees += ["-i", str(p)]
-        filtres.append(f"[{n + j}:a]aresample=48000,pan=stereo|c0=c0|c1=c0,highpass=f=90,acompressor=threshold=-18dB:ratio=3,volume=3dB,adelay={int(t0 * 1000)}|{int(t0 * 1000)}[v{j}]")
+        filtres.append(f"[{n + j}:a]aresample=48000,pan=stereo|c0=c0|c1=c0,highpass=f=80,volume=3dB,adelay={int(t0 * 1000)}|{int(t0 * 1000)}[v{j}]")
     labels = "".join(f"[s{i}]" for i in range(n)) + "".join(f"[v{j}]" for j in range(len(repl)))
     filtres.append(f"{labels}amix=inputs={n + len(repl)}:normalize=0,apad,atrim=0:{fiche['duree']},loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[out]")
     r = subprocess.run(["ffmpeg", "-y", "-v", "error", *entrees, "-filter_complex", ";".join(filtres), "-map", "[out]", "-ac", "2", str(sortie)], capture_output=True, text=True)
