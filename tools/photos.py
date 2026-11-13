@@ -44,14 +44,20 @@ def distance(a, b):
     return bin(int(a, 16) ^ int(b, 16)).count("1")
 
 
+def norme(u):
+    """Adresse de page Commons comparable, quel que soit l'encodage."""
+    import urllib.parse
+    return urllib.parse.unquote(u or "").replace(" ", "_").split("?")[0] or None
+
+
 def conflit(chemin=None, source=None, post=None):
     """Renvoie l'entrée du registre qui bloque cette photo, ou None."""
     h = dhash(chemin) if chemin else None
-    url = (source or {}).get("url")
+    url = norme((source or {}).get("url"))
     for e in charger():
         if post and e.get("post") == post:
             continue  # nouveau rendu du même post
-        if url and e.get("url") == url:
+        if url and norme(e.get("url")) == url:
             return e
         if h and e.get("dhash") and distance(h, e["dhash"]) <= SEUIL:
             return e

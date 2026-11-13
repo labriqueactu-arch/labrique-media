@@ -32,7 +32,7 @@ Résultat : publie/<même nom>.json avec, par réseau, l'identifiant, le lien et
 Une fiche dont le résultat existe déjà n'est jamais republiée. Une fiche en retard de plus
 de RETARD_MAX minutes n'est pas publiée : le résultat note « abandonné (retard) ».
 """
-import datetime, json, os, sys, time, urllib.error, urllib.parse, urllib.request
+import datetime, json, os, subprocess, sys, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -245,6 +245,16 @@ def publier(fiche, attendre=True):
         ecrire(res_path, res)
         print(json.dumps(res, ensure_ascii=False))
         return True
+    if os.environ.get("GITHUB_ACTIONS"):
+        # dernière lecture du dépôt : la tâche a pu retirer ou corriger la fiche pendant l'attente
+        subprocess.run(["git", "pull", "-q", "--rebase"], cwd=RACINE)
+        if chemin_resultat(fiche).exists():
+            print(f"{fiche.name} : déjà traité par un autre passage.")
+            return True
+        if not fiche.exists():
+            print(f"{fiche.name} : retirée avant l'heure, rien n'est publié.")
+            return True
+        f = json.loads(fiche.read_text(encoding="utf-8"))
     for m in f["medias"] + ([f["couverture"]] if f.get("couverture") else []):
         attendre_media(url_media(m))
     res = {"fiche": fiche.name, "heure_prevue": f["heure"], "reseaux": {}}

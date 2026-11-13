@@ -1,0 +1,34 @@
+name: Repérage photos
+
+# Une demande poussée dans a_reperer/ donne une planche contact de photos libres dans reperage/.
+on:
+  push:
+    branches: [main]
+    paths: ["a_reperer/**"]
+
+concurrency:
+  group: reperage
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  reperer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pillow
+      - run: python3 tools/reperer.py $(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- a_reperer/)
+      - run: |
+          git config user.name "La Brique (repérage)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reperage
+          git diff --cached --quiet || git commit -q -m "Repérage photos"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done

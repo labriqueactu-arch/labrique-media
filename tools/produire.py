@@ -120,6 +120,23 @@ def credits(legende, cr):
     return legende.rstrip() + "\n\n" + " ".join(lignes) if "📸" not in legende else legende
 
 
+def apercu(id_, photos, img, cover):
+    """Planche de contrôle : post, couverture du Reel et détourages sur fond Parquet."""
+    from PIL import Image
+    H = 900
+    tuiles = [Image.open(img).convert("RGB"), Image.open(cover).convert("RGB")]
+    for cle in ("post", "video"):
+        d = Image.open(photos[cle][0]).convert("RGBA")
+        f = Image.new("RGBA", d.size, (224, 78, 34, 255)); f.alpha_composite(d)
+        tuiles.append(f.convert("RGB"))
+    tuiles = [t.resize((int(t.width * H / t.height), H)) for t in tuiles]
+    planche = Image.new("RGB", (sum(t.width for t in tuiles) + 20 * (len(tuiles) - 1), H), "white")
+    x = 0
+    for t in tuiles:
+        planche.paste(t, (x, 0)); x += t.width + 20
+    planche.save(RACINE / "produit" / f"{id_}-apercu.jpg", quality=85)
+
+
 def ecrire(p, d):
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -169,7 +186,8 @@ def produire(chemin):
             "heure": heure.isoformat(), "type": "reel", "medias": [f"posts/videos/{id_}.mp4"], "couverture": f"posts/videos/{id_}-cover.jpg",
             "legende": credits(C["legende_reel"], photos["video"][2:]), "threads": credits(C["threads_reel"], photos["video"][2:]),
             "alt": C.get("alt"), "reseaux": ["instagram", "facebook", "threads"]})
-        rap.update(ok=True, post=f"posts/{id_}.jpg", reel=f"posts/videos/{id_}.mp4", couverture=f"posts/videos/{id_}-cover.jpg",
+        apercu(id_, photos, out_img, out_vid.with_name(f"{id_}-cover.jpg"))
+        rap.update(ok=True, apercu=f"produit/{id_}-apercu.jpg", post=f"posts/{id_}.jpg", reel=f"posts/videos/{id_}.mp4", couverture=f"posts/videos/{id_}-cover.jpg",
                    reel_info=info_v, publication={"post": h_post.isoformat(), "reel": heure.isoformat()})
     except Refus as e:
         rap["erreurs"].append(str(e))
