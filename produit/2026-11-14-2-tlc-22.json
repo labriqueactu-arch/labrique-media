@@ -1,11 +1,25 @@
 {
  "id": "2026-11-14-2-tlc-22",
  "commande": "a_produire/2026-11-14-2-tlc-22.json",
- "date": "2026-11-14T08:51:14",
- "ok": false,
- "erreurs": [
-  "vidéo : ERREUR : 0.0 s : texte hors zone sûre : « Étoile Rouge » (602,372 → 979,420) ; 0.5 s : texte hors zone sûre : « Étoile Rouge » (602,372 → 979,420) ; 1.0 s : texte hors zone sûre : « Étoile Rouge » (602,372 → 979,420) ; 1.5 s : texte hors zone sûre : « Étoile Rouge » (602,372 → 979,420) ; 2.0 s : texte hors zone sûre : « Étoile Rouge » (602,372 → 979,420) ; 3.0 s : texte hors zone sûre : « Luwawu-Cabarrot » (336,1120 → 978,1212). Corrige la fiche (cadre, textes, temps) puis relance. Ne publie pas."
- ],
+ "date": "2026-11-14T08:54:18",
+ "ok": true,
+ "erreurs": [],
+ "apercu": "produit/2026-11-14-2-tlc-22-apercu.jpg",
+ "post": "posts/2026-11-14-2-tlc-22.jpg",
+ "reel": "posts/videos/2026-11-14-2-tlc-22.mp4",
+ "couverture": "posts/videos/2026-11-14-2-tlc-22-cover.jpg",
+ "reel_info": {
+  "duree": 13.0,
+  "taille_mo": 7.05,
+  "lufs": -15.0,
+  "ok": true,
+  "sortie": "/home/runner/work/labrique-media/labrique-media/posts/videos/2026-11-14-2-tlc-22.mp4",
+  "couverture": "/home/runner/work/labrique-media/labrique-media/posts/videos/2026-11-14-2-tlc-22-cover.jpg"
+ },
+ "publication": {
+  "post": "2026-11-14T11:50:00+01:00",
+  "reel": "2026-11-14T12:00:00+01:00"
+ },
  "refus": [
   "posts/2026-11-14-2-tlc-22_refuse.png",
   "posts/videos/2026-11-14-2-tlc-22_refuse.jpg"
