@@ -69,7 +69,7 @@ def preparer_photo(cle, spec, id_):
     info = commons(spec["fichier"])
     import photos as registre
     source = {"url": info["page"], "auteur": info["auteur"], "joueur": spec.get("joueur")}
-    e = registre.conflit(None, source)
+    e = registre.conflit(None, source, post=id_)  # un nouveau rendu du même post reprend ses photos
     if e:
         raise Refus(f"photo « {cle} » : {registre.message(e)}")
     dossier = RACINE / "banque" / "photos" / re.sub(r"[^a-z0-9]+", "-", info["titre"][5:].lower()).strip("-")[:80]
