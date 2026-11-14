@@ -1,0 +1,10 @@
+{
+ "id": "2026-11-14-1-sga-40",
+ "commande": "a_produire/2026-11-14-1-sga-40.json",
+ "date": "2026-11-14T07:05:16",
+ "ok": false,
+ "erreurs": [
+  "vidéo : ERREUR : la voix finit à 12.75 s, après la fin de la vidéo (12.5 s) : raccourcis le texte"
+ ],
+ "refus": []
+}
