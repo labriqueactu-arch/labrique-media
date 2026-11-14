@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-14-2-tlc-22-1-post.json",
+ "heure_prevue": "2026-11-14T11:50:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18129338086861727",
+   "lien": "https://www.instagram.com/p/DfuB82DDc77/",
+   "statut": "publié",
+   "heure": "11:50"
+  },
+  "facebook": {
+   "id": "1473274879194688_122102621337545766",
+   "lien": "https://www.facebook.com/122102273253545766/posts/122102621337545766",
+   "statut": "publié",
+   "heure": "11:50"
+  },
+  "threads": {
+   "id": "18156739090547817",
+   "lien": "https://www.threads.com/@labrique.hoops/post/DfuB_qmm3pa",
+   "statut": "publié",
+   "heure": "11:50"
+  }
+ },
+ "statut": "publié"
+}
