@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-14-1-sga-40-v2-1-post.json",
+ "heure_prevue": "2026-11-14T13:52:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18145163974525171",
+   "lien": "https://www.instagram.com/p/DfuP6X8jrA5/",
+   "statut": "publié",
+   "heure": "13:52"
+  },
+  "facebook": {
+   "id": "1473274879194688_122102705661545766",
+   "lien": "https://www.facebook.com/122102273253545766/posts/122102705661545766",
+   "statut": "publié",
+   "heure": "13:52"
+  },
+  "threads": {
+   "id": "18104872109361443",
+   "lien": "https://www.threads.com/@labrique.hoops/post/DfuP8FmFThN",
+   "statut": "publié",
+   "heure": "13:52"
+  }
+ },
+ "statut": "publié"
+}

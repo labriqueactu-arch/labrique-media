@@ -1,0 +1,23 @@
+{
+ "fiche": "2026-11-14-2-tlc-22-v2-1-post.json",
+ "heure_prevue": "2026-11-14T14:02:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18122227403515857",
+   "lien": "https://www.instagram.com/p/DfuRDmpDZ3e/",
+   "statut": "publié",
+   "heure": "14:02"
+  },
+  "facebook": {
+   "id": "1473274879194688_122102712699545766",
+   "lien": "https://www.facebook.com/122102273253545766/posts/122102712699545766",
+   "statut": "publié",
+   "heure": "14:02"
+  },
+  "threads": {
+   "statut": "échec",
+   "erreur": "HTTP 400 sur https://graph.threads.net/v1.0/me/threads_publish : The requested resource does not exist (code 24, sous-code 4279009)"
+  }
+ },
+ "statut": "échec partiel"
+}
