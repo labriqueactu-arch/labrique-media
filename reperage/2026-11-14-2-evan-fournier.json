@@ -1,0 +1,22 @@
+[
+ {
+  "fichier": "File:Evan Fournier.jpg",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Ktrepas",
+  "date": "2024-12-29",
+  "taille": "1200x800",
+  "page": "https://commons.wikimedia.org/wiki/File%3AEvan_Fournier.jpg",
+  "deja_utilisee": false,
+  "numero": 1
+ },
+ {
+  "fichier": "File:Evan Fournier (cropped).jpg",
+  "licence": "CC BY-SA 4.0",
+  "auteur": "Ktrepas",
+  "date": "2024-12-29",
+  "taille": "646x800",
+  "page": "https://commons.wikimedia.org/wiki/File%3AEvan_Fournier_%28cropped%29.jpg",
+  "deja_utilisee": false,
+  "numero": 2
+ }
+]
