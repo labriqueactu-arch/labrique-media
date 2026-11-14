@@ -157,6 +157,7 @@ def produire(chemin):
             raise Refus("la commande doit déclarer deux photos différentes : « post » et « video »")
         if C["photos"]["post"]["fichier"] == C["photos"]["video"]["fichier"]:
             raise Refus("le post et la vidéo utilisent la même photo : une photo ne sert qu'une fois")
+        print(f"[{id_}] photos", flush=True)
         photos = {k: preparer_photo(k, s, id_) for k, s in C["photos"].items()}
         travail = RACINE / "produit" / "travail" / id_
         travail.mkdir(parents=True, exist_ok=True)
@@ -164,14 +165,16 @@ def produire(chemin):
         fp = dict(C["post"], props=remplacer(C["post"]["props"], photos), source_photo=photos["post"][1])
         ecrire(travail / "post.json", fp)
         out_img = RACINE / "posts" / f"{id_}.jpg"
-        r = subprocess.run([sys.executable, str(TOOLS / "render_ds.py"), str(travail / "post.json"), str(out_img)] + (["--essai"] if C.get("essai") else []), capture_output=True, text=True)
+        print(f"[{id_}] post", flush=True)
+        r = subprocess.run([sys.executable, str(TOOLS / "render_ds.py"), str(travail / "post.json"), str(out_img)] + (["--essai"] if C.get("essai") else []), capture_output=True, text=True, timeout=600)
         if r.returncode:
             raise Refus("post : " + (r.stderr or r.stdout).strip()[-600:])
         # 2. Reel
         fv = dict(remplacer(C["video"], photos), source_photo=photos["video"][1])
         ecrire(travail / "video.json", fv)
         out_vid = RACINE / "posts" / "videos" / f"{id_}.mp4"
-        r = subprocess.run([sys.executable, str(TOOLS / "video" / "reel.py"), str(travail / "video.json"), str(out_vid)] + (["--essai"] if C.get("essai") else []), capture_output=True, text=True)
+        print(f"[{id_}] reel", flush=True)
+        r = subprocess.run([sys.executable, str(TOOLS / "video" / "reel.py"), str(travail / "video.json"), str(out_vid)] + (["--essai"] if C.get("essai") else []), capture_output=True, text=True, timeout=600)
         if r.returncode:
             raise Refus("vidéo : " + (r.stderr or r.stdout).strip()[-600:])
         info_v = json.loads(r.stdout.strip().splitlines()[-1])
@@ -191,6 +194,8 @@ def produire(chemin):
                    reel_info=info_v, publication={"post": h_post.isoformat(), "reel": heure.isoformat()})
     except Refus as e:
         rap["erreurs"].append(str(e))
+    except subprocess.TimeoutExpired as e:
+        rap["erreurs"].append(f"outil bloqué plus de {int(e.timeout)} s : {' '.join(map(str, e.cmd[1:3]))}. Repousse la commande telle quelle pour relancer.")
     except subprocess.CalledProcessError as e:
         rap["erreurs"].append(f"outil en échec : {e.cmd[:2]} {(e.stderr or b'')[-300:]!r}")
     except Exception as e:

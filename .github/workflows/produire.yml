@@ -64,6 +64,7 @@ jobs:
       - name: Production
         id: prod
         continue-on-error: true
+        timeout-minutes: 20
         run: python3 tools/produire.py ${{ steps.liste.outputs.commandes }}
       - name: Enregistrement
         run: |
