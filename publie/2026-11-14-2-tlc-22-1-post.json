@@ -6,19 +6,22 @@
    "id": "18129338086861727",
    "lien": "https://www.instagram.com/p/DfuB82DDc77/",
    "statut": "publié",
-   "heure": "11:50"
+   "heure": "11:50",
+   "erreur_suppression": "HTTP 400 sur https://graph.facebook.com/v27.0/18129338086861727 : (#10) Insufficient permissions to access this data (code 10, sous-code None)"
   },
   "facebook": {
    "id": "1473274879194688_122102621337545766",
    "lien": "https://www.facebook.com/122102273253545766/posts/122102621337545766",
-   "statut": "publié",
-   "heure": "11:50"
+   "statut": "supprimé",
+   "heure": "11:50",
+   "supprime_le": "2026-11-14 14:02"
   },
   "threads": {
    "id": "18156739090547817",
    "lien": "https://www.threads.com/@labrique.hoops/post/DfuB_qmm3pa",
    "statut": "publié",
-   "heure": "11:50"
+   "heure": "11:50",
+   "erreur_suppression": "HTTP 400 sur https://graph.threads.net/v1.0/18156739090547817 : Unsupported delete request. Object with ID '18156739090547817' does not exist, cannot be loaded due to missing permissions, or does not support this operation (code 100, sous-code 33)"
   }
  },
  "statut": "publié"
