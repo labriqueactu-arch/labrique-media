@@ -9,6 +9,7 @@ Usage :
   python3 tools/publier.py publier a_publier/X.json  # attend l'heure prévue puis publie
   python3 tools/publier.py echeances                 # publie toutes les fiches arrivées à échéance
   python3 tools/publier.py rafraichir-threads        # prolonge le jeton Threads (60 jours), écrit le nouveau dans $GITHUB_OUTPUT
+  python3 tools/publier.py supprimer publie/X.json   # supprime définitivement les publications de ce résultat (les 3 réseaux)
 
 Variables d'environnement (secrets GitHub) :
   META_PAGE_TOKEN   jeton de page longue durée (Instagram et Facebook)
@@ -278,6 +279,36 @@ def ecrire(p, d):
     p.write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
+def supprimer(resultat):
+    """Supprime définitivement chaque publication d'un résultat publie/X.json et note la suppression."""
+    p = RACINE / resultat
+    r = json.loads(p.read_text(encoding="utf-8"))
+    ok = True
+    for res, info in r.get("reseaux", {}).items():
+        if info.get("statut") != "publié" or not info.get("id"):
+            continue
+        try:
+            if res in ("instagram", "facebook"):
+                rep = appel("DELETE", f"{FB}/{info['id']}", {"access_token": env("META_PAGE_TOKEN")})
+            elif res == "threads":
+                rep = appel("DELETE", f"{TH}/{info['id']}", {"access_token": env("THREADS_TOKEN")})
+            else:
+                continue
+            if rep.get("success") is False:
+                raise ErreurAPI(f"refus : {rep}")
+            info["statut"] = "supprimé"
+            info["supprime_le"] = datetime.datetime.now(BXL).strftime("%Y-%m-%d %H:%M")
+            print(f"{p.name} {res} : supprimé")
+        except ErreurAPI as e:
+            info["erreur_suppression"] = str(e)
+            print(f"{p.name} {res} : ÉCHEC {e}")
+            ok = False
+    if all(i.get("statut") != "publié" for i in r.get("reseaux", {}).values()):
+        r["statut"] = "supprimé"
+    ecrire(p, r)
+    return ok
+
+
 def echeances():
     ok = True
     for fiche in sorted((RACINE / "a_publier").glob("*.json")):
@@ -350,6 +381,8 @@ if __name__ == "__main__":
             ok = echeances()
         elif a[0] == "tester-reel" and len(a) == 2:
             ok = tester_reel(a[1])
+        elif a[0] == "supprimer" and len(a) >= 2:
+            ok = all([supprimer(f) for f in a[1:]])
         elif a[0] == "rafraichir-threads":
             ok = rafraichir_threads()
         else:
