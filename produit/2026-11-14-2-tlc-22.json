@@ -1,12 +1,13 @@
 {
  "id": "2026-11-14-2-tlc-22",
  "commande": "a_produire/2026-11-14-2-tlc-22.json",
- "date": "2026-11-14T08:49:07",
+ "date": "2026-11-14T08:51:14",
  "ok": false,
  "erreurs": [
-  "vidéo : ERREUR : la voix finit à 14.03 s, après la fin de la vidéo (12.5 s) : raccourcis le texte"
+  "vidéo : ERREUR : 0.0 s : texte hors zone sûre : « Étoile Rouge » (602,372 → 979,420) ; 0.5 s : texte hors zone sûre : « Étoile Rouge » (602,372 → 979,420) ; 1.0 s : texte hors zone sûre : « Étoile Rouge » (602,372 → 979,420) ; 1.5 s : texte hors zone sûre : « Étoile Rouge » (602,372 → 979,420) ; 2.0 s : texte hors zone sûre : « Étoile Rouge » (602,372 → 979,420) ; 3.0 s : texte hors zone sûre : « Luwawu-Cabarrot » (336,1120 → 978,1212). Corrige la fiche (cadre, textes, temps) puis relance. Ne publie pas."
  ],
  "refus": [
-  "posts/2026-11-14-2-tlc-22_refuse.png"
+  "posts/2026-11-14-2-tlc-22_refuse.png",
+  "posts/videos/2026-11-14-2-tlc-22_refuse.jpg"
  ]
 }
