@@ -1,10 +1,10 @@
 {
  "id": "2026-11-14-2-tlc-22",
  "commande": "a_produire/2026-11-14-2-tlc-22.json",
- "date": "2026-11-14T08:47:05",
+ "date": "2026-11-14T08:49:07",
  "ok": false,
  "erreurs": [
-  "post : ERREUR : texte sur un visage : « 105 » | texte sur un visage : « 84 » | texte sur un visage : « FINAL » | module sur un visage : lb-score lb-abs. Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
+  "vidéo : ERREUR : la voix finit à 14.03 s, après la fin de la vidéo (12.5 s) : raccourcis le texte"
  ],
  "refus": [
   "posts/2026-11-14-2-tlc-22_refuse.png"
