@@ -6,19 +6,22 @@
    "id": "18388403497225134",
    "lien": "https://www.instagram.com/p/DfsvNbplTp6/",
    "statut": "publié",
-   "heure": "23:47"
+   "heure": "23:47",
+   "erreur_suppression": "HTTP 400 sur https://graph.facebook.com/v27.0/18388403497225134 : (#10) Insufficient permissions to access this data (code 10, sous-code None)"
   },
   "facebook": {
    "id": "1473274879194688_122102273223545766",
    "lien": "https://www.facebook.com/122102273253545766/posts/122102273223545766",
-   "statut": "publié",
-   "heure": "23:47"
+   "statut": "supprimé",
+   "heure": "23:47",
+   "supprime_le": "2026-11-14 13:48"
   },
   "threads": {
    "id": "18131598421868493",
    "lien": "https://www.threads.com/@labrique.hoops/post/DfsvPBekcyH",
    "statut": "publié",
-   "heure": "23:47"
+   "heure": "23:47",
+   "erreur_suppression": "HTTP 403 sur https://graph.threads.net/v1.0/18131598421868493 : Application does not have permission for this action (code 10, sous-code None)"
   }
  },
  "statut": "publié"
