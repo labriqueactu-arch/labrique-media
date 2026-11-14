@@ -1,10 +1,12 @@
 {
  "id": "2026-11-14-1-sga-40",
  "commande": "a_produire/2026-11-14-1-sga-40.json",
- "date": "2026-11-14T07:07:22",
+ "date": "2026-11-14T07:08:48",
  "ok": false,
  "erreurs": [
-  "photo « post » : photo déjà utilisée le 2026-11-14 pour « 2026-11-14-1-sga-40 » (Shai Gilgeous-Alexander, Sandro Halank, Wikimedia Commons). Une photo ne sert qu'une fois : trouve une autre photo."
+  "vidéo : ERREUR : 0.0 s : texte sur le visage : « Los Angeles » ; 3.0 s : texte sur le visage : « Shai » ; 3.0 s : texte hors zone sûre : « Gilgeous-Alexander » (283,1116 → 1274,1245) ; 3.0 s : texte sur le visage : « Gilgeous-Alexander » ; 3.5 s : texte sur le visage : « Shai » ; 3.5 s : texte hors zone sûre : « Gilgeous-Alexander » (286,1116 → 1277,1245). Corrige la fiche (cadre, textes, temps) puis relance. Ne publie pas."
  ],
- "refus": []
+ "refus": [
+  "posts/videos/2026-11-14-1-sga-40_refuse.jpg"
+ ]
 }
