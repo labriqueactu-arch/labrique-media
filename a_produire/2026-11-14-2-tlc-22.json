@@ -1,0 +1,72 @@
+{
+ "id": "2026-11-14-2-tlc-22",
+ "heure": "2026-11-14T12:00:00+01:00",
+ "photos": {
+  "post": {
+   "fichier": "File:Timothé Luwawu-Cabarrot 3 Real Madrid Baloncesto Euroleague 20260929 (1).JPG",
+   "joueur": "Timothé Luwawu-Cabarrot"
+  },
+  "video": {
+   "fichier": "File:Timothé Luwawu-Cabarrot 3 Real Madrid Baloncesto Euroleague 20260929 (2).JPG",
+   "joueur": "Timothé Luwawu-Cabarrot"
+  }
+ },
+ "post": {
+  "composant": "PostChiffre",
+  "props": {
+   "montage": "lumiere",
+   "chiffre": "22",
+   "verdict": "SWISH",
+   "photo": "@post",
+   "fantome": "auto",
+   "score": [
+    {"nom": "Real Madrid", "score": "105", "gagnant": true},
+    {"nom": "Étoile Rouge", "score": "84"}
+   ],
+   "surtitre": "Points contre l'*Étoile Rouge*",
+   "prenom": "Timothé",
+   "nom": "Luwawu-Cabarrot",
+   "pastilles": [
+    "24 d'évaluation",
+    "Sans Maledon ni Campazzo"
+   ],
+   "punchline": "Deux meneurs à l'infirmerie. TLC n'a pas attendu.",
+   "meta": "LB · LE CHIFFRE / EUROLEAGUE",
+   "format": "LE CHIFFRE",
+   "alt": "Timothé Luwawu-Cabarrot en maillot du Real Madrid, chiffre 22 géant"
+  }
+ },
+ "video": {
+  "format": "recap",
+  "duree": 12.5,
+  "verdict": "SWISH",
+  "photo": "@video",
+  "cadre": {"x": 330, "y": 500, "l": 700},
+  "surtitre": "Points contre l'*Étoile Rouge*",
+  "chiffre": "22",
+  "prenom": "Timothé",
+  "nom": "Luwawu-Cabarrot",
+  "stats": [
+   {"a": 24, "suffixe": " d'éval"},
+   {"a": 105, "suffixe": "-84"}
+  ],
+  "punchline": "Les meneurs ? Pas besoin.",
+  "fin": "Ça rentre ou ça *brique* ?",
+  "voix": {
+   "id": "Xy5q4w05TJGcKXPWeWoz",
+   "modele": "eleven_v4",
+   "ecart": 0.2,
+   "repliques": [
+    {"texte": "Vingt-deux points pour Timothé Luwawu-Cabarrot."},
+    {"texte": "Le Real Madrid écrase l'Étoile Rouge, cent cinq à quatre-vingt-quatre."},
+    {"texte": "Sans Maledon ni Campazzo, trente-huit points dans le premier quart."},
+    {"texte": "TLC patron du Real ? Ça rentre, ou ça brique ?"}
+   ]
+  }
+ },
+ "legende": "SANS MENEURS, LE REAL A TROUVÉ TLC 🔥🇫🇷\n\nTimothé Luwawu-Cabarrot plante 22 points et 24 d'évaluation contre l'Étoile Rouge. Le Real Madrid gagne 105-84, avec 38 points dans le premier quart-temps et 17 paniers à trois points. Le tout sans Théo Maledon ni Facundo Campazzo, blessés.\n\nVerdict : SWISH. Le Real se découvre une autre arme, et elle est française.\n\nTLC doit-il garder ce rôle quand les meneurs reviennent ? 👀👇\n\nSources : feuille de match EuroLeague, BasketEurope, Real Madrid.\n\n#LuwawuCabarrot #RealMadrid #EuroLeague #NBAFrance #LaBrique",
+ "threads": "SANS MENEURS, LE REAL A TROUVÉ TLC\n\n22 points et 24 d'évaluation pour Timothé Luwawu-Cabarrot. Le Real Madrid écrase l'Étoile Rouge 105-84, sans Maledon ni Campazzo. Verdict : SWISH. 🔥\n\n#EuroLeague",
+ "alt": "Visuel La Brique : Timothé Luwawu-Cabarrot détouré en maillot du Real Madrid, chiffre 22 géant, verdict SWISH.",
+ "legende_reel": "38 POINTS DANS LE PREMIER QUART. SANS SES MENEURS 😳\n\nLe Real Madrid écrase l'Étoile Rouge 105-84. Timothé Luwawu-Cabarrot met 22 points, alors que Théo Maledon et Facundo Campazzo sont à l'infirmerie.\n\nVerdict : SWISH. Ça rentre ou ça brique ? 👀👇\n\nSources : feuille de match EuroLeague, BasketEurope, Real Madrid.\n\n#LuwawuCabarrot #RealMadrid #EuroLeague #NBAFrance #LaBrique",
+ "threads_reel": "22 points pour Timothé Luwawu-Cabarrot, le Real écrase l'Étoile Rouge 105-84 sans ses meneurs. Ça rentre ou ça brique ? 👀\n\n#EuroLeague"
+}
