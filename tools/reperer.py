@@ -110,6 +110,7 @@ def reperer(chemin):
         for i, t in enumerate(tuiles):
             planche.paste(t, ((i % cols) * (T + 10), (i // cols) * (T + 50)))
         planche.save(RACINE / "reperage" / f"{nom}.jpg", quality=82)
+    (RACINE / "reperage").mkdir(exist_ok=True)
     for c in cands:
         c.pop("vignette", None)
     (RACINE / "reperage" / f"{nom}.json").write_text(json.dumps(cands, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
