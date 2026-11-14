@@ -44,7 +44,7 @@
  },
  "video": {
   "format": "recap",
-  "duree": 12.5,
+  "duree": 13,
   "verdict": "REBOND",
   "photo": "@video",
   "cadre": {
@@ -80,7 +80,7 @@
      "texte": "Quinze sur vingt-six au tir, chez les Clippers."
     },
     {
-     "texte": "Mais OKC ne marque plus rien en fin de match, et perd d'un point."
+     "texte": "Mais OKC ne marque plus rien à la fin, et perd d'un point."
     },
     {
      "texte": "Quarante points, et une défaite. Ça rentre, ou ça brique ?"
