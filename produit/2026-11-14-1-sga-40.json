@@ -1,11 +1,25 @@
 {
  "id": "2026-11-14-1-sga-40",
  "commande": "a_produire/2026-11-14-1-sga-40.json",
- "date": "2026-11-14T07:12:30",
- "ok": false,
- "erreurs": [
-  "vidéo : ERREUR : 4.0 s : 9 mots à l'écran (8 au plus hors carte de fin) ; 4.5 s : 9 mots à l'écran (8 au plus hors carte de fin) ; 5.0 s : 9 mots à l'écran (8 au plus hors carte de fin). Corrige la fiche (cadre, textes, temps) puis relance. Ne publie pas."
- ],
+ "date": "2026-11-14T08:51:46",
+ "ok": true,
+ "erreurs": [],
+ "apercu": "produit/2026-11-14-1-sga-40-apercu.jpg",
+ "post": "posts/2026-11-14-1-sga-40.jpg",
+ "reel": "posts/videos/2026-11-14-1-sga-40.mp4",
+ "couverture": "posts/videos/2026-11-14-1-sga-40-cover.jpg",
+ "reel_info": {
+  "duree": 13.0,
+  "taille_mo": 5.79,
+  "lufs": -15.2,
+  "ok": true,
+  "sortie": "/Users/dev/la_brique/labrique-media/posts/videos/2026-11-14-1-sga-40.mp4",
+  "couverture": "/Users/dev/la_brique/labrique-media/posts/videos/2026-11-14-1-sga-40-cover.jpg"
+ },
+ "publication": {
+  "post": "2026-11-14T08:55:00+01:00",
+  "reel": "2026-11-14T09:05:00+01:00"
+ },
  "refus": [
   "posts/videos/2026-11-14-1-sga-40_refuse.jpg"
  ]
