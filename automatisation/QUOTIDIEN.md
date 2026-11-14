@@ -27,10 +27,10 @@ Tu décides seul : sujet, verdict, mise en page, montage, voix, légendes. Perso
 
 ## 2. Photos (deux photos différentes, jamais déjà utilisées)
 
-1. Pousse une demande de repérage : `a_reperer/AAAA-MM-JJ-N-<joueur>.json` = `{"joueur": "Prénom Nom", "recherches": ["Nom Équipe", "Prénom Nom 2026"], "max": 16}`. `git add`, `commit`, `push`.
+1. Pousse une demande de repérage : `a_reperer/AAAA-MM-JJ-N-<joueur>.json` = `{"joueur": "Prénom Nom", "max": 16}`. Le repérage fouille la catégorie Commons du joueur et ses sous-catégories ; ajoute `"recherches": ["Nom Équipe 2025"]` si la catégorie est pauvre. Pour gagner du temps, repère d'emblée deux ou trois joueurs candidats dans la même poussée (un fichier chacun). `git add`, `commit`, `push`.
 2. Attends 2 à 3 minutes, `git pull`, regarde `reperage/<nom>.jpg` avec Read et lis `reperage/<nom>.json` : licence, date, « deja_utilisee ».
-3. Choisis **deux photos différentes** (ni la même, ni deux recadrages de la même) : maillot de l'équipe actuelle, joueur net et reconnaissable, de préférence seul. S'il y a d'autres joueurs, donne un `recadrage` [x0, y0, x1, y1] en fractions (le quadrillage de la planche est tous les 10 %) qui ne garde que lui, tête comprise.
-4. Moins de deux photos valables : change de sujet ou de joueur. Jamais de photo non libre, jamais une photo déjà utilisée.
+3. Choisis **deux photos différentes** (ni la même, ni deux recadrages de la même) : de moins de 4 ans, maillot de l'équipe actuelle ou de son équipe nationale actuelle, joueur net et reconnaissable, de préférence seul. S'il y a d'autres joueurs, donne un `recadrage` [x0, y0, x1, y1] en fractions (le quadrillage de la planche est tous les 10 %) qui ne garde que lui, tête comprise.
+4. Moins de deux photos valables : change de sujet ou de joueur. C'est fréquent : beaucoup de stars n'ont qu'une ou deux photos libres récentes. Choisis le sujet en tenant compte des photos disponibles. Jamais de photo non libre, jamais une photo déjà utilisée.
 
 ## 3. Commande
 
