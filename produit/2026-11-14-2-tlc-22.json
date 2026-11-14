@@ -1,0 +1,12 @@
+{
+ "id": "2026-11-14-2-tlc-22",
+ "commande": "a_produire/2026-11-14-2-tlc-22.json",
+ "date": "2026-11-14T08:44:42",
+ "ok": false,
+ "erreurs": [
+  "post : ERREUR : texte sur un visage : « Luwawu-Cabarrot » | texte sur un visage : « 24 d'évaluation » | texte sur un visage : « Sans Maledon ni Campazzo » | texte sur un visage : « Deux meneurs à l'infirmerie. T » | module sur un visage : lb-sceau-verdict | module sur un visage : lb-pastille lb-pastille-pleine | module sur un visage : lb-pastille lb-pastille-contour. Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
+ ],
+ "refus": [
+  "posts/2026-11-14-2-tlc-22_refuse.png"
+ ]
+}
