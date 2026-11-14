@@ -193,6 +193,9 @@ def main():
         sys.exit(__doc__)
     fiche_p, out = Path(a[0]).resolve(), Path(a[1]).resolve()
     F = json.loads(fiche_p.read_text(encoding="utf-8"))
+    if F.get("version") == 2:  # Reels dynamiques : voir dynamique.py
+        import dynamique
+        return dynamique.main(sys.argv[1:])
     base = fiche_p.parent
     if F.get("format") != "recap":
         erreur("format inconnu (seul « recap » existe pour l'instant)")

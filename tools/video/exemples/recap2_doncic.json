@@ -1,0 +1,62 @@
+{
+ "format": "recap",
+ "version": 2,
+ "verdict": null,
+ "photo": "../../../banque/doncic-2/detoure.png",
+ "source_photo": {
+  "joueur": "Luka Dončić",
+  "auteur": "Erik Drost",
+  "url": "https://commons.wikimedia.org/wiki/File:Luka_Doncic_Lakers_Deandre_Hunter_Donovan_Mitchell_Cavaliers_Jan_2026.jpg"
+ },
+ "cadre": {
+  "x": 250,
+  "y": 470,
+  "l": 960
+ },
+ "chiffre": "5",
+ "prenom": "Luka",
+ "nom": "Dončić",
+ "stats": [
+  {
+   "a": 32,
+   "suffixe": " pts",
+   "mot": "Trente"
+  },
+  {
+   "a": 10,
+   "suffixe": " passes",
+   "mot": "Dix"
+  }
+ ],
+ "fin": "Ça rentre ou ça *brique* ?",
+ "voix": {
+  "id": "Xy5q4w05TJGcKXPWeWoz",
+  "nom": "Max - Charismatic & Friendly",
+  "modele": "eleven_v4",
+  "stabilite": 0.0,
+  "style": 0.6,
+  "phrases": [
+   {
+    "role": "accroche",
+    "texte": "Cinq interceptions. Luka, défenseur ?!",
+    "ecran": "INTERCEPTIONS. LUKA *DÉFENSEUR* ?"
+   },
+   {
+    "role": "joueur",
+    "texte": "Trente deux points. Dix passes."
+   },
+   {
+    "role": "contexte",
+    "texte": "Et sans Austin Reaves ? Les Lakers gagnent quand même."
+   },
+   {
+    "role": "punch",
+    "texte": "Luka a tout pris. Même les ballons des autres."
+   },
+   {
+    "role": "question",
+    "texte": "Ça rentre, ou ça brique ?"
+   }
+  ]
+ }
+}

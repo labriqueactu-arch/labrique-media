@@ -1,0 +1,62 @@
+{
+ "format": "recap",
+ "version": 2,
+ "verdict": "REBOND",
+ "photo": "../../../banque/photos/2023-08-09-deutschland-gegen-kanada-basketball-l-nderspiel-by-sandro-halank-113-/detoure-video.png",
+ "source_photo": {
+  "joueur": "Shai Gilgeous-Alexander",
+  "auteur": "Sandro Halank",
+  "url": "https://commons.wikimedia.org/wiki/File:2023-08-09_Deutschland_gegen_Kanada_(Basketball-Länderspiel)_by_Sandro_Halank–113.jpg"
+ },
+ "cadre": {
+  "x": 330,
+  "y": 500,
+  "l": 700
+ },
+ "chiffre": "40",
+ "prenom": "Shai",
+ "nom": "Gilgeous-Alexander",
+ "stats": [
+  {
+   "a": 15,
+   "suffixe": "/26",
+   "mot": "Quinze"
+  }
+ ],
+ "fin": "Ça rentre ou ça *brique* ?",
+ "voix": {
+  "id": "Xy5q4w05TJGcKXPWeWoz",
+  "nom": "Max - Charismatic & Friendly",
+  "modele": "eleven_v4",
+  "stabilite": 0.0,
+  "style": 0.6,
+  "phrases": [
+   {
+    "role": "accroche",
+    "texte": "Quarante points ! Et il perd ?!",
+    "ecran": "POINTS. ET IL *PERD* ?"
+   },
+   {
+    "role": "joueur",
+    "texte": "SGA. Quinze sur vingt six !"
+   },
+   {
+    "role": "contexte",
+    "texte": "Le Thunder mène de six… Puis ? Plus rien."
+   },
+   {
+    "role": "verdict",
+    "texte": "Verdict… rebond.",
+    "silence_avant": 0.45
+   },
+   {
+    "role": "punch",
+    "texte": "Le dernier tir ? À côté !"
+   },
+   {
+    "role": "question",
+    "texte": "Ça rentre, ou ça brique ?"
+   }
+  ]
+ }
+}
