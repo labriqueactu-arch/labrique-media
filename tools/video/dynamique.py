@@ -166,7 +166,13 @@ def resserrer(wav, mots, v, dossier):
         if i > 0:
             fin_prec = mots[i - 1][2]
             g = s - fin_prec
-            if g > garde + 0.02:
+            voulu = n != mots[i - 1][3] and silences.get(n)
+            if voulu and g < garde:
+                # silence voulu plus long que la pause de la prise : on l'allonge au milieu de la pause
+                ajoute(x[int(curseur * SR):int((fin_prec + g / 2) * SR)])
+                ajoute(np.zeros(int((garde - g) * SR)))
+                curseur = fin_prec + g / 2
+            elif g > garde + 0.02:
                 # on garde la queue du mot précédent et l'attaque de celui-ci, on retire le milieu
                 q = min(0.06, garde * 0.5)
                 ajoute(x[int(curseur * SR):int((fin_prec + q) * SR)])
@@ -189,7 +195,11 @@ def resserrer(wav, mots, v, dossier):
             garde = ECARTS["phrase"] if n != mots[i - 1][3] else ECARTS["mot"]
         if i > 0:
             fin_prec = mots[i - 1][2]
-            if s - fin_prec > garde + 0.02:
+            g = s - fin_prec
+            if n != mots[i - 1][3] and silences.get(n) and g < garde:
+                pos += (fin_prec + g / 2) - curseur + (garde - g)
+                curseur = fin_prec + g / 2
+            elif g > garde + 0.02:
                 q = min(0.06, garde * 0.5)
                 pos += (fin_prec + q) - curseur
                 a = garde - q

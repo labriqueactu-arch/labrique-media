@@ -45,7 +45,7 @@
  },
  "video": {
   "format": "recap",
-  "duree": 12.5,
+  "version": 2,
   "verdict": null,
   "photo": "@video",
   "cadre": {
@@ -53,38 +53,48 @@
    "y": 470,
    "l": 960
   },
-  "surtitre": "Interceptions à *Atlanta*",
   "chiffre": "5",
   "prenom": "Luka",
   "nom": "Dončić",
   "stats": [
    {
     "a": 32,
-    "suffixe": " pts"
+    "suffixe": " pts",
+    "mot": "Trente"
    },
    {
     "a": 10,
-    "suffixe": " passes"
+    "suffixe": " passes",
+    "mot": "Dix"
    }
   ],
-  "punchline": "Sans Reaves, Luka a tout pris.",
   "fin": "Ça rentre ou ça *brique* ?",
   "voix": {
    "id": "Xy5q4w05TJGcKXPWeWoz",
    "modele": "eleven_v4",
-   "ecart": 0.2,
-   "repliques": [
+   "stabilite": 0.0,
+   "style": 0.6,
+   "phrases": [
     {
-     "texte": "Cinq interceptions à Atlanta."
+     "role": "accroche",
+     "texte": "Cinq interceptions. Luka, défenseur ?!",
+     "ecran": "INTERCEPTIONS. LUKA *DÉFENSEUR* ?"
     },
     {
-     "texte": "Luka Dončić : trente-deux points, dix passes."
+     "role": "joueur",
+     "texte": "Trente deux points. Dix passes."
     },
     {
-     "texte": "Sans Austin Reaves, les Lakers gagnent quand même."
+     "role": "contexte",
+     "texte": "Et sans Austin Reaves ? Les Lakers gagnent quand même."
     },
     {
-     "texte": "Luka en défense ? Ça rentre, ou ça brique ?"
+     "role": "punch",
+     "texte": "Luka a tout pris. Même les ballons des autres."
+    },
+    {
+     "role": "question",
+     "texte": "Ça rentre, ou ça brique ?"
     }
    ]
   }

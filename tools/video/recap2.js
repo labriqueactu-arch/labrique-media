@@ -184,7 +184,7 @@
       S.chiffre = { x: -60, y: -260, s: 1.1, o: .12 }; S.fantome = { o: .7 }; S.halo = .3; S.voile = 1;
     } else if (id === 'D') {
       var pd = M.p(u, 0, .6, 'expoOut');
-      S.cam.s = M.mix(1.25, 1.0, pd) * (1 + 0.12 * u);
+      S.cam.s = M.mix(1.25, 1.0, pd) * (1 + 0.2 * u);
       S.joueur = { x: G.xD, y: 0, s: 1.04 * respire, o: 1 };
       S.chiffre = { x: 0, y: -80, s: 1.15, o: .14 }; S.halo = .35;
       S.sceau = 1;
@@ -231,7 +231,7 @@
       punch += 0.045 * M.impulsion(tt, bt0, .04, .26);
     }
     // silence de tension avant le verdict : pulsation sur la grille de tempo (120 BPM, un temps toutes les 0,5 s)
-    if (id === 'D' && T.sceau != null) for (var bt = pl.t0 + .25; bt < T.sceau - .1; bt += .5) punch += 0.035 * M.impulsion(tt, bt, .04, .3);
+    if (id === 'D' && T.sceau != null) for (var bt = pl.t0 + .25; bt < T.sceau - .1; bt += .5) punch += 0.05 * M.impulsion(tt, bt, .04, .3);
     var gi = -1;
     for (var q3 = 0; q3 < ST.length; q3++) if (tt >= ST[q3].d && ST[q3].role === pl.ph.role) gi = q3;
     if (gi >= 0 && (id === 'C' || id === 'E') && ST[gi].d > pl.t0 + .3) {
