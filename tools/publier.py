@@ -170,6 +170,8 @@ def facebook(f):
     else:
         raise ErreurAPI(f"type inconnu : {f['type']}")
     lien = appel("GET", f"{FB}/{pid}", {"fields": "permalink_url", "access_token": tok}).get("permalink_url")
+    if lien and lien.startswith("/"):
+        lien = "https://www.facebook.com" + lien
     return {"id": pid, "lien": lien}
 
 
