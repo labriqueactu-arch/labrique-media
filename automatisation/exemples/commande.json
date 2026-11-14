@@ -24,23 +24,13 @@
   }
  },
  "post": {
+  "version": 2,
   "composant": "PostChiffre",
   "props": {
-   "montage": "lumiere",
    "chiffre": "5",
    "photo": "@post",
-   "fantome": "auto",
-   "surtitre": "Interceptions à *Atlanta*",
-   "prenom": "Luka",
-   "nom": "Dončić",
-   "pastilles": [
-    "32 pts · 10 passes",
-    "Lakers 10-2"
-   ],
-   "punchline": "Sans Reaves, Luka a tout pris.",
-   "meta": "LB · LE CHIFFRE / NBA",
-   "format": "LE CHIFFRE",
-   "alt": "Luka Dončić en maillot des Lakers, chiffre 5 géant"
+   "titre": "Interceptions. Luka *défenseur* ?",
+   "bandeau": "10.11 · NBA · LAKERS 124-114 À ATLANTA · SOURCES ESPN, AP, LA TIMES"
   }
  },
  "video": {

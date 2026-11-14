@@ -1,0 +1,10 @@
+{
+ "version": 2,
+ "composant": "PostChiffre",
+ "props": {
+  "chiffre": "5",
+  "photo": "joueur_detoure.png",
+  "titre": "Interceptions. Luka *défenseur* ?",
+  "bandeau": "10.11 · NBA · LAKERS 124-114 À ATLANTA · SOURCES ESPN, AP, LA TIMES"
+ }
+}

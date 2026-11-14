@@ -1,5 +1,15 @@
 # Gabarits La Brique (design system, style A « Affiche de match »)
 
+## Version 2 : DA brute (depuis le 14/11/2026)
+
+Toute nouvelle fiche porte `"version": 2` (`tools/render_post2.py`, scène `tools/post2.js`). Même système que les Reels : aplats francs (SWISH Os, REBOND Parquet, BRIQUE Encre ; Le Chiffre sur Os, L'Affiche sur Parquet), joueur étalonné qui domine, mot géant (verdict, chiffre ou mot) devant le corps sous le visage, avec un contour de la couleur du fond, bandeau noir qui porte le titre, bandeau télé en bas (format, date, compétition, score, sources). Logo toujours en haut à gauche, tampon toujours en haut à droite. Trois niveaux de texte, un seul mot en serif, deux signes forts (mot géant et tampon). Exemples : `gabarits/ds2/`.
+
+Composants : PostVerdict (`verdict`), PostChiffre (`chiffre`, `verdict` facultatif), PostAffiche (`mot`), PostFaceAFace (`haut` et `bas` : `photo`, `nom`, `stat`). Champs communs : `photo`, `titre`, `bandeau`, `format` (facultatif), `cadre` (`visage` en px, `cx`, `top` : facultatif, la mise en page s'adapte seule). Classement et Échange restent en version 1 ci-dessous.
+
+Contrôles en plus des anciens : 3 niveaux de texte au plus ; mot géant au moins 5 fois plus grand que le titre ; héros (joueur et mot géant) sur au moins 60 % ; marges de 64 px ; contraste des infos d'au moins 4,5 ; 2 signes forts au plus ; netteté du visage d'au moins 120 (Laplacien) ; visage jamais agrandi plus de 2 fois. Les 7 anciens gabarits échouent tous à ces contrôles.
+
+## Version 1 (ancienne DA, gardée pour Classement et Échange)
+
 Préparation (une fois par session) : `bash tools/setup.sh` (détourage, détection des visages, Playwright).
 Rendu : `python3 tools/render_ds.py fiche.json sortie.jpg` (1080 × 1350, JPEG). Les composants viennent du design system (`tools/ds/`, copie du design system publié dans Claude).
 Détourage : `node tools/cutout.mjs photo.jpg joueur_detoure.png`, puis regarde le résultat. Fantôme halftone (montage Lumière) : `"fantome": "auto"` dans la fiche, ou `python3 tools/trame.py joueur_detoure.png fantome.png`.

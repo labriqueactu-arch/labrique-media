@@ -10,6 +10,8 @@ Les chemins d'images (photo, photoPlein, fantome, grosPlan, haut.photo, equipes[
 sont relatifs à la fiche. "fantome": "auto" fabrique le fantôme halftone depuis "photo".
 Dans les textes, *mot* passe le mot en accent.
 
+Une fiche "version": 2 passe par render_post2.py (DA brute, alignée sur les Reels).
+
 Contrôles (le rendu est refusé si l'un échoue, avec un fichier _refuse.png) :
   polices chargées ; aucun texte sous 28 px ; aucun texte, pastille, tableau ou sceau
   sur un visage (le mot héros placé derrière le joueur est permis) ; aucun visage coupé
@@ -146,6 +148,9 @@ def main():
         sys.exit(__doc__)
     fiche, out = Path(args[0]).resolve(), Path(args[1]).resolve()
     d = json.loads(fiche.read_text(encoding="utf-8"))
+    if d.get("version") == 2:  # posts « DA brute », voir render_post2.py
+        import render_post2
+        return render_post2.main(fiche, out, essai)
     comp, props = d.get("composant"), dict(d.get("props") or {})
     if comp not in COMPOSANTS:
         sys.exit(f"Composant inconnu : {comp}. Choix : {', '.join(sorted(COMPOSANTS))}")

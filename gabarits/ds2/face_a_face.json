@@ -1,0 +1,17 @@
+{
+ "version": 2,
+ "composant": "PostFaceAFace",
+ "props": {
+  "haut": {
+   "photo": "joueur_haut.png",
+   "nom": "TATUM",
+   "stat": "Boston gagne 123-101 à Philly"
+  },
+  "bas": {
+   "photo": "joueur_bas.png",
+   "nom": "COULIBALY",
+   "stat": "0 point à OKC"
+  },
+  "bandeau": "QUI A EU LA PIRE SEMAINE ? VOTE EN COMMENTAIRE"
+ }
+}

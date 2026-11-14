@@ -1,0 +1,14 @@
+{
+ "version": 2,
+ "composant": "PostAffiche",
+ "props": {
+  "mot": "7 DE SUITE",
+  "photo": "joueur_detoure.png",
+  "cadre": {
+   "visage": 300
+  },
+  "titre": "Les Spurs ne lâchent *rien*",
+  "bandeau": "07.11 · NBA · 7E VICTOIRE DE SUITE DES SPURS, À SACRAMENTO",
+  "format": "L'AFFICHE"
+ }
+}

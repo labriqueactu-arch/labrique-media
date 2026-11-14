@@ -120,6 +120,16 @@ def credits(legende, cr):
     return legende.rstrip() + "\n\n" + " ".join(lignes) if "📸" not in legende else legende
 
 
+def credits_tous(legende, crs):
+    """Un crédit par photo (face à face : deux photos, deux crédits)."""
+    if "📸" in legende:
+        return legende
+    lignes = [f"📸 {cr[0]}, photo détourée." for cr in crs]
+    if any("SA" in cr[1].upper() for cr in crs):
+        lignes.append("Visuel sous CC BY-SA 4.0.")
+    return legende.rstrip() + "\n\n" + " ".join(lignes)
+
+
 def apercu(id_, photos, img, cover):
     """Planche de contrôle : post, couverture du Reel et détourages sur fond Parquet."""
     from PIL import Image
@@ -162,7 +172,8 @@ def produire(chemin):
         travail = RACINE / "produit" / "travail" / id_
         travail.mkdir(parents=True, exist_ok=True)
         # 1. post image
-        fp = dict(C["post"], props=remplacer(C["post"]["props"], photos), source_photo=photos["post"][1])
+        cles_post = sorted(k for k in photos if k.startswith("post"))  # « post », puis « post2 » pour un face à face
+        fp = dict(C["post"], props=remplacer(C["post"]["props"], photos), source_photo=[photos[k][1] for k in cles_post])
         ecrire(travail / "post.json", fp)
         out_img = RACINE / "posts" / f"{id_}.jpg"
         print(f"[{id_}] post", flush=True)
@@ -183,7 +194,7 @@ def produire(chemin):
         dest = RACINE / ("produit/essais" if C.get("essai") else "a_publier")
         ecrire(dest / f"{id_}-1-post.json", {
             "heure": h_post.isoformat(), "type": "image", "medias": [f"posts/{id_}.jpg"],
-            "legende": credits(C["legende"], photos["post"][2:]), "threads": credits(C["threads"], photos["post"][2:]),
+            "legende": credits_tous(C["legende"], [photos[k][2:] for k in cles_post]), "threads": credits_tous(C["threads"], [photos[k][2:] for k in cles_post]),
             "alt": C.get("alt"), "reseaux": ["instagram", "facebook", "threads"]})
         ecrire(dest / f"{id_}-2-reel.json", {
             "heure": heure.isoformat(), "type": "reel", "medias": [f"posts/videos/{id_}.mp4"], "couverture": f"posts/videos/{id_}-cover.jpg",

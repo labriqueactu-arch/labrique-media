@@ -13,7 +13,7 @@ Tu décides seul : sujet, verdict, mise en page, montage, voix, légendes. Perso
 
 1. Tu es dans le clone de `labriqueactu-arch/labrique-media` (branche main). `git pull`. Lis `CLAUDE.md` (règles absolues).
 2. Le conteneur n'a pas d'accès web direct : recherche et lecture de pages par **Firecrawl** (`firecrawl_search`, `firecrawl_scrape`). Le rendu, les photos, la voix et la publication tournent dans **GitHub Actions**, déclenchés par tes `git push`.
-3. Journal : Google Sheet `16r1aw-QzSdZdnS96clZfuFiQF2etth_DT4xYI7U9nA4`, onglet `Untitled`, colonnes A à K (date, format, sujet, verdict, pilier, rendez-vous, lien, metricool id → « id publication », statut, montage, joueurs). Lis `Untitled!A1:K600`.
+3. Journal : Google Sheet `16r1aw-QzSdZdnS96clZfuFiQF2etth_DT4xYI7U9nA4`, onglet `Untitled`, colonnes A à K (date, format, sujet, verdict, pilier, rendez-vous, lien, metricool id → « id publication », statut, montage ou format, joueurs). Lis `Untitled!A1:K600`.
 4. Si une ligne du jour porte déjà le statut « réservé créneau N » ou « publié créneau N » pour ton créneau : arrête-toi en une ligne.
 
 ## 1. Sujet
@@ -36,7 +36,7 @@ Tu décides seul : sujet, verdict, mise en page, montage, voix, légendes. Perso
 
 Écris `a_produire/<id>.json` d'après `automatisation/COMMANDE.md` (exemple complet : `automatisation/exemples/commande.json`). `id` = `AAAA-MM-JJ-N-<sujet>`. `heure` = 08:00 ou 12:00, Europe/Brussels avec le décalage (`+01:00` en hiver, `+02:00` en été).
 
-- **Post** : composant et montage d'après `gabarits/GABARITS.md` (fiches d'exemple dans `gabarits/ds/`). Montage différent du post précédent (colonne J). Éclat seulement pour une BRIQUE ou une rupture déclarée.
+- **Post** : version 2 (DA brute, `gabarits/GABARITS.md`, fiches d'exemple dans `gabarits/ds2/`). PostVerdict pour un verdict, PostChiffre pour un chiffre qui claque, PostAffiche pour un mot géant de 1 à 3 mots, PostFaceAFace pour deux joueurs. `titre` : la phrase du bandeau noir, 3 à 7 mots, un seul `*mot*` en serif. `bandeau` : « JJ.MM · COMPÉTITION · SCORE · SOURCES ». Pas de pastilles, pas de punchline séparée : tout tient dans le titre. Format différent du post précédent (colonne J). Si un contrôle refuse (rapport de taille, héros, netteté), corrige la fiche : titre plus court, `cadre.visage` plus petit, ou autre photo.
 - **Reel** : format `recap` version 2 (voir `tools/video/VIDEO.md`, exemple `tools/video/exemples/recap2_sga.json`). Voix : Max, `{"id": "Xy5q4w05TJGcKXPWeWoz", "modele": "eleven_v4", "stabilite": 0.0, "style": 0.6, "phrases": [...]}`. Phrases écrites pour l'oreille, 3 à 8 mots, dans l'ordre : `accroche` (3 à 6 mots qui créent une tension, verdict caché, avec `ecran` : le texte affiché sous le chiffre), `joueur` (chiffres martelés), `contexte` (une question rhétorique), `verdict` (« Verdict… rebond. », `"silence_avant": 0.45`, seulement s'il y a un verdict), `punch` (punchline qui sourit), `question` (« Ça rentre, ou ça brique ? »). Environ 30 mots en tout. Pas de balise de ton : la production les pose et refait jusqu'à 4 prises si la voix sort plate. Écris les noms tels qu'ils se prononcent (« Luka Dončić », « SGA »). Aucun tiret.
 - **Légendes** : Instagram et Facebook façon _nba_talks : accroche d'une ligne en MAJUSCULES avec un ou deux emojis, 2 ou 3 phrases de faits, verdict, question finale terminée par 👀👇, sources, exactement 5 hashtags (joueur, équipe, #NBA ou #EuroLeague, #NBAFrance, #LaBrique). Threads : 450 caractères au plus, deux emojis au plus, un seul hashtag. La légende du Reel a une accroche différente, pensée pour des non abonnés. **N'écris pas le crédit photo** : la production l'ajoute.
 
@@ -53,7 +53,7 @@ Tu décides seul : sujet, verdict, mise en page, montage, voix, légendes. Perso
 ## 5. Après publication
 
 1. Suis `publie/<id>-1-post.json` et `publie/<id>-2-reel.json` (`git pull` toutes les 2 minutes) jusqu'à leur arrivée.
-2. Journal : deux lignes (format « Post » puis « Reel recap »), lien Instagram en colonne G, statut « publié créneau N HH:MM » ou l'erreur exacte, montage, joueurs.
+2. Journal : deux lignes (format « Post » puis « Reel recap »), lien Instagram en colonne G, statut « publié créneau N HH:MM » ou l'erreur exacte, format du post (Verdict, Chiffre, Affiche, Face à face), joueurs.
 3. Un message final de 5 lignes au plus : sujet, verdict, liens Instagram du post et du Reel, ce qui a coincé.
 
 ## Si ça casse

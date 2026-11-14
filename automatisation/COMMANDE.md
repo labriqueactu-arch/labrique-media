@@ -6,8 +6,8 @@ Un fichier `a_produire/<id>.json` par créneau. Exemple complet : `exemples/comm
 | --- | --- |
 | `id` | `AAAA-MM-JJ-N-<sujet>`, unique, minuscules et tirets |
 | `heure` | heure du Reel, ISO avec fuseau (`2026-11-14T08:00:00+01:00`). Le post sort 10 minutes avant |
-| `photos.post`, `photos.video` | `fichier` (`File:…` de Commons, copié de `reperage/*.json`), `joueur`, `recadrage` facultatif [x0, y0, x1, y1] en fractions. Deux photos différentes |
-| `post` | fiche `render_ds` : `composant`, `props` (avec `"photo": "@post"`), `rupture` si Éclat hors BRIQUE. Voir `gabarits/GABARITS.md` |
+| `photos.post`, `photos.video` (et `photos.post2` pour un face à face) | `fichier` (`File:…` de Commons, copié de `reperage/*.json`), `joueur`, `recadrage` facultatif [x0, y0, x1, y1] en fractions. Deux photos différentes |
+| `post` | fiche `render_ds` **`"version": 2`** : `composant` (PostVerdict, PostChiffre, PostAffiche, PostFaceAFace), `props` avec `"photo": "@post"`, `titre`, `bandeau`. Face à face : `haut.photo` `@post`, `bas.photo` `@post2` (troisième photo `photos.post2`). Classement et Échange restent en version 1. Voir `gabarits/GABARITS.md` |
 | `video` | fiche `reel.py` format `recap`, **`"version": 2`**, avec `"photo": "@video"`, `cadre`, `chiffre`, `prenom`, `nom`, `stats` (1 ou 2, chacune avec `mot` : le mot parlé qui la fait claquer), `fin`, `verdict` (ou null), `voix` (Max, `phrases` par rôle). Pas de `duree` : elle suit la voix (8 à 11,5 s). Voir `tools/video/VIDEO.md` |
 | `legende`, `threads`, `alt` | textes du post, sans crédit photo (ajouté par la production) |
 | `legende_reel`, `threads_reel` | textes du Reel |

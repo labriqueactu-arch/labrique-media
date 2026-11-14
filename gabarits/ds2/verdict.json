@@ -1,0 +1,10 @@
+{
+ "version": 2,
+ "composant": "PostVerdict",
+ "props": {
+  "verdict": "REBOND",
+  "photo": "joueur_detoure.png",
+  "titre": "40 points et *rien* au bout",
+  "bandeau": "13.11 · NBA · CLIPPERS 113-112 OKC · SOURCES ESPN, AP"
+ }
+}
