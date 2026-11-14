@@ -19,23 +19,12 @@
    "verdict": "SWISH",
    "photo": "@post",
    "fantome": "auto",
-   "score": [
-    {
-     "nom": "Real Madrid",
-     "score": "105",
-     "gagnant": true
-    },
-    {
-     "nom": "Étoile Rouge",
-     "score": "84"
-    }
-   ],
    "surtitre": "Points contre *Belgrade*",
    "prenom": "Timothé",
    "nom": "Luwawu-Cabarrot",
    "pastilles": [
     "24 d'évaluation",
-    "Sans Maledon ni Campazzo"
+    "Real 105-84"
    ],
    "punchline": "Deux meneurs blessés. TLC a pris la place.",
    "meta": "LB · LE CHIFFRE / EUROLEAGUE",
