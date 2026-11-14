@@ -39,7 +39,7 @@
  },
  "video": {
   "format": "recap",
-  "duree": 12.5,
+  "duree": 13,
   "verdict": "SWISH",
   "photo": "@video",
   "cadre": {
@@ -69,16 +69,16 @@
    "ecart": 0.2,
    "repliques": [
     {
-     "texte": "Vingt-deux points pour Timothé Luwawu-Cabarrot."
+     "texte": "Vingt-deux points pour Luwawu-Cabarrot."
     },
     {
-     "texte": "Le Real Madrid écrase l'Étoile Rouge, cent cinq à quatre-vingt-quatre."
+     "texte": "Le Real écrase l'Étoile Rouge."
     },
     {
-     "texte": "Sans Maledon ni Campazzo, trente-huit points dans le premier quart."
+     "texte": "Sans Maledon, ni Campazzo."
     },
     {
-     "texte": "TLC patron du Real ? Ça rentre, ou ça brique ?"
+     "texte": "TLC patron ? Ça rentre, ou ça brique ?"
     }
    ]
   }
