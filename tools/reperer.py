@@ -7,7 +7,7 @@ Tourne dans GitHub Actions (.github/workflows/reperer.yml), déclenché par un p
 Demande : {"joueur": "Victor Wembanyama", "recherches": ["Wembanyama Spurs", "Wembanyama 2025"], "fichiers": ["File:..."], "max": 16}
 Sortie : reperage/<nom>.jpg (planche numérotée, quadrillage tous les 10 % pour choisir un recadrage)
          reperage/<nom>.json (pour chaque numéro : fichier, licence, auteur, date, taille, déjà utilisée ou non).
-Seules les photos sous licence libre et de moins de 2 ans sont gardées.
+Seules les photos sous licence libre et de moins de 4 ans sont gardées.
 """
 import datetime, json, re, sys, time, urllib.parse, urllib.request
 from pathlib import Path
@@ -44,7 +44,7 @@ def libre(c):
     if "NC" in lic or "ND" in lic or not any(lic.startswith(x) for x in LIBRES):
         return False
     try:
-        return (datetime.date.today() - datetime.date.fromisoformat(c["date"])).days <= 730
+        return (datetime.date.today() - datetime.date.fromisoformat(c["date"])).days <= 1461
     except ValueError:
         return False
 
@@ -54,6 +54,23 @@ def reperer(chemin):
     D = json.loads(chemin.read_text(encoding="utf-8"))
     nom = chemin.stem
     titres = list(D.get("fichiers", []))
+    # catégories Commons du joueur, sous-catégories comprises (profondeur 2)
+    a_voir, vues = [f"Category:{c}" for c in D.get("categories", [])], set()
+    if D.get("joueur") and not D.get("categories"):
+        a_voir.append("Category:" + D["joueur"])
+    for prof in range(3):
+        suivantes = []
+        for cat in a_voir:
+            if cat in vues:
+                continue
+            vues.add(cat)
+            r = api(list="categorymembers", cmtitle=cat, cmlimit=200, cmtype="file|subcat")
+            for m in r.get("query", {}).get("categorymembers", []):
+                if m["ns"] == 14 and prof < 2:
+                    suivantes.append(m["title"])
+                elif m["title"].lower().endswith((".jpg", ".jpeg", ".png")):
+                    titres.append(m["title"])
+        a_voir = suivantes
     for q in D.get("recherches", []):
         r = api(list="search", srnamespace=6, srlimit=40, srsearch=q)
         titres += [x["title"] for x in r.get("query", {}).get("search", []) if x["title"].lower().endswith((".jpg", ".jpeg", ".png"))]
@@ -61,7 +78,7 @@ def reperer(chemin):
     cands = []
     for i in range(0, len(titres), 40):
         cands += infos(titres[i:i + 40])
-    cands = [c for c in cands if libre(c)][: D.get("max", 16)]
+    cands = sorted([c for c in cands if libre(c)], key=lambda c: c["date"], reverse=True)[: D.get("max", 16)]
     import photos as registre
     for c in cands:
         e = registre.conflit(None, {"url": c["page"], "auteur": c["auteur"], "joueur": D.get("joueur")})

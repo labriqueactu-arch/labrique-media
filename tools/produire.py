@@ -18,7 +18,7 @@ La commande (écrite par la tâche du matin ou de midi, voir automatisation/COMM
     "legende_reel": "...", "threads_reel": "..."
   }
 « @post » et « @video » désignent les photos de la commande. Chaque photo est vérifiée sur Commons
-(licence libre, prise de vue de moins de 2 ans), téléchargée une fois, détourée et inscrite au registre :
+(licence libre, prise de vue de moins de 4 ans), téléchargée une fois, détourée et inscrite au registre :
 une photo ne sert qu'une fois. Les crédits sont ajoutés à la fin des légendes.
 
 Sorties : posts/<id>.jpg, posts/videos/<id>.mp4 et -cover.jpg, a_publier/<id>-post.json et -reel.json,
@@ -55,8 +55,8 @@ def commons(fichier):
     date = g("DateTimeOriginal")[:10]
     try:
         d = datetime.date.fromisoformat(date)
-        if (datetime.date.today() - d).days > 730:
-            raise Refus(f"{titre} : photo de {date}, plus de 2 ans.")
+        if (datetime.date.today() - d).days > 1461:
+            raise Refus(f"{titre} : photo de {date}, plus de 4 ans.")
     except ValueError:
         date = None
     return {"titre": titre, "page": "https://commons.wikimedia.org/wiki/" + urllib.parse.quote(titre.replace(" ", "_")),
