@@ -48,9 +48,9 @@
   "verdict": "REBOND",
   "photo": "@video",
   "cadre": {
-   "x": 260,
-   "y": 450,
-   "l": 820
+   "x": 330,
+   "y": 500,
+   "l": 700
   },
   "surtitre": "Points à *Los Angeles*",
   "chiffre": "40",
@@ -63,10 +63,10 @@
    },
    {
     "a": 3,
-    "suffixe": " défaites de suite"
+    "suffixe": " défaites"
    }
   ],
-  "punchline": "40 points. Le dernier tir à côté.",
+  "punchline": "Le dernier tir ? À côté.",
   "fin": "Ça rentre ou ça *brique* ?",
   "voix": {
    "id": "Xy5q4w05TJGcKXPWeWoz",

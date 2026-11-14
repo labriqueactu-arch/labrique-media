@@ -51,7 +51,7 @@
     h('div', { id: 'logo', key: 'logo', className: 'lb-abs', style: { left: 60, top: 262 } }, h(L.Logo, { taille: 64 })),
     h('div', { id: 'surtitre', key: 'surtitre', className: 'lb-abs', style: { left: 60, top: 372, fontSize: 44 } },
       h('div', { className: 'lb-surtitre', style: { fontSize: 44 } }, h('span', { className: 'lb-surtitre-filet' }), h('span', null, md(F.surtitre)))),
-    h('div', { id: 'nom', key: 'nom', className: 'lb-abs', style: { left: 90, top: 1130 } }, h(L.NomJoueur, { prenom: F.prenom, nom: F.nom, taille: 118 })),
+    h('div', { id: 'nom', key: 'nom', className: 'lb-abs', style: { left: 90, top: 1130 } }, h(L.NomJoueur, { prenom: F.prenom, nom: F.nom, taille: F.tailleNom || (String(F.nom).length > 11 ? 84 : 118) })),
     h('div', { id: 'stats', key: 'stats', className: 'lb-abs lb-pastilles', style: { left: 60, top: 1290 } },
       F.stats.map(function (s, i) {
         return h('span', { key: i, id: 'stat' + i, className: 'lb-pastille ' + (i ? 'lb-pastille-contour' : 'lb-pastille-pleine'), style: { fontSize: 52, display: 'inline-block' } },
