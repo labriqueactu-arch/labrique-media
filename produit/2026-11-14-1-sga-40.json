@@ -1,10 +1,10 @@
 {
  "id": "2026-11-14-1-sga-40",
  "commande": "a_produire/2026-11-14-1-sga-40.json",
- "date": "2026-11-14T07:08:48",
+ "date": "2026-11-14T07:12:30",
  "ok": false,
  "erreurs": [
-  "vidéo : ERREUR : 0.0 s : texte sur le visage : « Los Angeles » ; 3.0 s : texte sur le visage : « Shai » ; 3.0 s : texte hors zone sûre : « Gilgeous-Alexander » (283,1116 → 1274,1245) ; 3.0 s : texte sur le visage : « Gilgeous-Alexander » ; 3.5 s : texte sur le visage : « Shai » ; 3.5 s : texte hors zone sûre : « Gilgeous-Alexander » (286,1116 → 1277,1245). Corrige la fiche (cadre, textes, temps) puis relance. Ne publie pas."
+  "vidéo : ERREUR : 4.0 s : 9 mots à l'écran (8 au plus hors carte de fin) ; 4.5 s : 9 mots à l'écran (8 au plus hors carte de fin) ; 5.0 s : 9 mots à l'écran (8 au plus hors carte de fin). Corrige la fiche (cadre, textes, temps) puis relance. Ne publie pas."
  ],
  "refus": [
   "posts/videos/2026-11-14-1-sga-40_refuse.jpg"
