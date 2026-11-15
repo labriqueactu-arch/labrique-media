@@ -29,6 +29,7 @@ Procédure du jour : `automatisation/QUOTIDIEN.md`. Format des commandes : `auto
 | Outil | Rôle | Où il tourne |
 | --- | --- | --- |
 | `tools/nuit.py` | veille ESPN de la nuit | conteneur ou Mac |
+| `tools/banque.py` | banque de photos libres notées (`chercher <nom>`, planches dans `banque/planches/`), mise à jour chaque lundi | Actions (`banque.yml`), lecture partout |
 | `tools/reperer.py` | planche contact de photos Commons libres | Actions (`a_reperer/`) |
 | `tools/produire.py` | commande → photos, post, Reel, fiches de publication | Actions (`a_produire/`) |
 | `tools/render_ds.py` | rendu du post 1080 × 1350 avec contrôles | Actions |

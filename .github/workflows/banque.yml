@@ -1,0 +1,36 @@
+name: Banque de photos
+
+# Chaque lundi à 4 h (heure d'hiver de Bruxelles : 3 h UTC), la banque de photos libres est remise à jour.
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      joueurs:
+        description: "noms entre guillemets, vide pour tous"
+        required: false
+
+concurrency:
+  group: banque
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  banque:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pillow "opencv-python-headless<5" numpy
+      - run: python3 tools/banque.py construire ${{ inputs.joueurs }}
+      - run: |
+          git config user.name "La Brique (banque)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add banque/registre.json banque/planches
+          git diff --cached --quiet || git commit -q -m "Banque de photos : mise à jour"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 5; done
