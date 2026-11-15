@@ -89,6 +89,8 @@ def preparer_photo(cle, spec, id_):
     brut = dossier / f"brut-{cle}.png"
     subprocess.run(["node", str(TOOLS / "cutout.mjs"), str(src_cut), str(brut)], check=True, capture_output=True, timeout=600)
     a = Image.open(brut).convert("RGBA").getchannel("A")
+    # foule ou fond chargé : le modèle rend un alpha à moitié transparent, on le remonte (joueur opaque, bords doux)
+    a = a.point(lambda v: 0 if v < 30 else min(255, int((v - 30) * 255 / 110)))
     rgba = Image.open(src_cut).convert("RGBA")
     rgba.putalpha(a)
     bbox = a.point(lambda v: 255 if v > 20 else 0).getbbox()

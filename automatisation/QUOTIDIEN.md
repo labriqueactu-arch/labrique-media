@@ -46,7 +46,7 @@ Tu décides seul : sujet, verdict, mise en page, montage, voix, légendes. Perso
 
 1. Toutes les 2 minutes, `git pull` jusqu'à voir `produit/<id>.json` (8 à 10 minutes).
 2. `"ok": false` : lis `erreurs` (et l'image `_refuse` si elle existe), corrige la commande (cadre, textes, recadrage, photo), pousse-la de nouveau. Une correction déclenche une nouvelle production.
-3. `"ok": true` : regarde `produit/<id>-apercu.jpg` avec Read, comme un directeur artistique. Post, couverture du Reel, deux détourages. Refuse si : un autre joueur dans le détourage, visage mal détouré, texte illisible, faute, faits faux.
+3. `"ok": true` : regarde `produit/<id>-apercu.jpg` avec Read, comme un directeur artistique. Post, couverture du Reel, deux détourages. Refuse si : un autre joueur dans le détourage, un bord vertical net qui coupe le joueur (recadrage trop serré : la tête et les épaules doivent être entières), un joueur pâle ou transparent, visage mal détouré, texte illisible, faute, faits faux.
 4. Refus après production : `git rm a_publier/<id>-*.json`, commit, push (la publication est annulée) ; corrige avec une **nouvelle** commande (nouvel `id`, nouvelles photos si besoin).
 5. Sinon, ne touche à rien : la publication attend l'heure et part seule (post 10 minutes avant le Reel).
 

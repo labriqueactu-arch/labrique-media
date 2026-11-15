@@ -6,9 +6,9 @@
    "fichier": "File:Cade Cunningham charging against T. J. McConnell, 2024-11-29 (cropped).jpg",
    "joueur": "Cade Cunningham",
    "recadrage": [
-    0.56,
+    0.5,
     0.0,
-    0.97,
+    0.915,
     1.0
    ]
   },
@@ -24,7 +24,7 @@
    "verdict": "REBOND",
    "photo": "@post",
    "titre": "Cade seul contre *14* contres",
-   "bandeau": "14.11 · NBA · HEAT 137-117 PISTONS · SOURCES ESPN, AP",
+   "bandeau": "14.11 · NBA · HEAT 137-117 PISTONS",
    "cadre": {
     "visage": 300,
     "top": 140
