@@ -34,8 +34,8 @@
   "photo": "@video",
   "cadre": {
    "x": 300,
-   "y": 480,
-   "l": 760
+   "y": 280,
+   "l": 700
   },
   "chiffre": "33",
   "prenom": "Cade",
@@ -57,7 +57,7 @@
     {
      "role": "accroche",
      "texte": "Trente trois points. Et une claque.",
-     "ecran": "POINTS. ET UNE *CLAQUE*"
+     "ecran": "ET UNE *CLAQUE*"
     },
     {
      "role": "joueur",
