@@ -3,13 +3,13 @@
  "heure": "2026-11-15T08:00:00+01:00",
  "photos": {
   "post": {
-   "fichier": "File:Cade Cunningham charging against T. J. McConnell, 2024-11-29.jpg",
+   "fichier": "File:Cade Cunningham charging against T. J. McConnell, 2024-11-29 (cropped).jpg",
    "joueur": "Cade Cunningham",
    "recadrage": [
-    0.48,
-    0.15,
-    0.77,
-    0.88
+    0.56,
+    0.0,
+    0.97,
+    1.0
    ]
   },
   "video": {
@@ -24,7 +24,11 @@
    "verdict": "REBOND",
    "photo": "@post",
    "titre": "Cade seul contre *14* contres",
-   "bandeau": "14.11 · NBA · HEAT 137-117 PISTONS · SOURCES ESPN, AP"
+   "bandeau": "14.11 · NBA · HEAT 137-117 PISTONS · SOURCES ESPN, AP",
+   "cadre": {
+    "visage": 300,
+    "top": 140
+   }
   }
  },
  "video": {
