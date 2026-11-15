@@ -60,8 +60,8 @@
    "phrases": [
     {
      "role": "accroche",
-     "texte": "Trente trois points. Et une claque.",
-     "ecran": "ET UNE *CLAQUE*"
+     "texte": "Trente trois points. Et battu de vingt !",
+     "ecran": "POINTS. ET *BATTU*"
     },
     {
      "role": "joueur",
