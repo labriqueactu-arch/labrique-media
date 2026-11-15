@@ -1,10 +1,10 @@
 {
  "id": "2026-11-15-1-cade-33",
  "commande": "a_produire/2026-11-15-1-cade-33.json",
- "date": "2026-11-15T05:07:25",
+ "date": "2026-11-15T05:09:52",
  "ok": false,
  "erreurs": [
-  "post : ERREUR : texte sur un visage : « REBOND ». Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
+  "vidéo : prise 1 (graine 7) : variation de hauteur 4.84 demi-tons\nprise 2 (graine 7) : variation de hauteur 5.73 demi-tons\nERREUR : 0.0 s : texte hors zone sûre : « ET » (60,1348 → 208,1522) ; 1.2 s : texte hors zone sûre : « CLAQUE » (488,1320 → 958,1492). Corrige la fiche puis relance. Ne publie pas."
  ],
  "refus": [
   "posts/2026-11-15-1-cade-33_refuse.png",
