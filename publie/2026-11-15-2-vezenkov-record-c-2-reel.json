@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-15-2-vezenkov-record-c-2-reel.json",
+ "heure_prevue": "2026-11-15T12:00:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "17989034103119471",
+   "lien": "https://www.instagram.com/reel/Dfwn5grASSw/",
+   "statut": "publié",
+   "heure": "12:00"
+  },
+  "facebook": {
+   "id": "2406789730065085",
+   "lien": "https://www.facebook.com/reel/2406789730065085/",
+   "statut": "publié",
+   "heure": "12:00"
+  },
+  "threads": {
+   "id": "18138076174659055",
+   "lien": "https://www.threads.com/@labrique.hoops/post/Dfwn_1BT-xX",
+   "statut": "publié",
+   "heure": "12:01"
+  }
+ },
+ "statut": "publié"
+}
