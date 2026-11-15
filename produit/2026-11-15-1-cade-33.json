@@ -1,11 +1,33 @@
 {
  "id": "2026-11-15-1-cade-33",
  "commande": "a_produire/2026-11-15-1-cade-33.json",
- "date": "2026-11-15T05:19:37",
- "ok": false,
- "erreurs": [
-  "vidéo : prise 1 (graine 7) : variation de hauteur 6.03 demi-tons\nERREUR : 1.7 s : texte hors zone sûre : « POINTS. » (-3,1197 → 443,1361) ; 1.7 s : texte hors zone sûre : « BATTU » (-3,1326 → 359,1490). Corrige la fiche puis relance. Ne publie pas."
- ],
+ "date": "2026-11-15T05:22:59",
+ "ok": true,
+ "erreurs": [],
+ "apercu": "produit/2026-11-15-1-cade-33-apercu.jpg",
+ "post": "posts/2026-11-15-1-cade-33.jpg",
+ "reel": "posts/videos/2026-11-15-1-cade-33.mp4",
+ "couverture": "posts/videos/2026-11-15-1-cade-33-cover.jpg",
+ "reel_info": {
+  "duree": 10.233333333333333,
+  "taille_mo": 14.47,
+  "lufs": -14.9,
+  "tempo": 1.0,
+  "debit_mots_s": 3.83,
+  "premier_mot_s": 0.035,
+  "variation_f0_demi_tons": 6.33,
+  "decalage_sous_titres_ms": 32,
+  "rendu_s": 50.9,
+  "dynamisme_moyen": 7.66,
+  "fenetre_min": 2.47,
+  "accroche": 47.87,
+  "ok": true,
+  "sortie": "/home/runner/work/labrique-media/labrique-media/posts/videos/2026-11-15-1-cade-33.mp4"
+ },
+ "publication": {
+  "post": "2026-11-15T07:50:00+01:00",
+  "reel": "2026-11-15T08:00:00+01:00"
+ },
  "refus": [
   "posts/2026-11-15-1-cade-33_refuse.png",
   "posts/videos/2026-11-15-1-cade-33_refuse.jpg"
