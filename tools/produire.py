@@ -96,6 +96,16 @@ def preparer_photo(cle, spec, id_):
     bbox = a.point(lambda v: 255 if v > 20 else 0).getbbox()
     if not bbox:
         raise Refus(f"photo « {cle} » : détourage vide")
+    # Recadrage qui tranche le joueur : du joueur opaque collé au bord gauche, droit ou haut de la photo
+    # dans la moitié haute (tête, épaules, bras). Le bas (jambes) peut sortir du cadre.
+    import numpy as np
+    m = np.asarray(a) > 128
+    h, w = m.shape
+    haut = m[: h // 2]
+    for nom, bord in (("gauche", haut[:, :3]), ("droit", haut[:, -3:]), ("haut", m[:3, :])):
+        if bord.mean() > 0.04:
+            raise Refus(f"photo « {cle} » : le joueur touche le bord {nom} de la photo, le recadrage le coupe. "
+                        "Élargis le recadrage (tête et épaules entières) ou prends une autre photo.")
     det = dossier / f"detoure-{cle}.png"
     rgba.crop(bbox).save(det)
     brut.unlink()
