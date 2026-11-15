@@ -12,8 +12,10 @@ on:
         description: "verifier, echeances ou tester-reel posts/videos/x.mp4 (aucune publication sauf echeances)"
         default: verifier
 
+# Chaque publication lancée (push ou commande) a son propre groupe : GitHub n'en garde qu'une en attente
+# par groupe et annulerait les autres. Le filet de 15 minutes a le sien et ne rattrape que les fiches en retard.
 concurrency:
-  group: publication
+  group: publication-${{ github.event_name == 'schedule' && 'filet' || github.run_id }}
   cancel-in-progress: false
 
 permissions:

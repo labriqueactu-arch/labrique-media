@@ -310,8 +310,16 @@ def supprimer(resultat):
 
 
 def echeances():
+    """Filet de sécurité : seulement les fiches en retard d'au moins 10 minutes (les autres ont leur propre lancement)."""
     ok = True
+    maintenant = datetime.datetime.now(BXL)
     for fiche in sorted((RACINE / "a_publier").glob("*.json")):
+        try:
+            h = heure(json.loads(fiche.read_text(encoding="utf-8")))
+        except Exception:
+            continue
+        if (maintenant - h).total_seconds() < 600:
+            continue
         ok &= publier(fiche, attendre=False)
     return ok
 
