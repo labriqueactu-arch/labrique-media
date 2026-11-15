@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-15-1-cade-33-2-reel.json",
+ "heure_prevue": "2026-11-15T08:00:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18109196138340634",
+   "lien": "https://www.instagram.com/reel/DfwMb-SAtzj/",
+   "statut": "publié",
+   "heure": "08:00"
+  },
+  "facebook": {
+   "id": "1584636403435083",
+   "lien": "https://www.facebook.com/reel/1584636403435083/",
+   "statut": "publié",
+   "heure": "08:00"
+  },
+  "threads": {
+   "id": "17907921687416457",
+   "lien": "https://www.threads.com/@labrique.hoops/post/DfwMhlchVpY",
+   "statut": "publié",
+   "heure": "08:01"
+  }
+ },
+ "statut": "publié"
+}
