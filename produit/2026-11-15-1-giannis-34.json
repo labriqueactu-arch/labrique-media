@@ -1,0 +1,12 @@
+{
+ "id": "2026-11-15-1-giannis-34",
+ "commande": "a_produire/2026-11-15-1-giannis-34.json",
+ "date": "2026-11-15T04:55:45",
+ "ok": false,
+ "erreurs": [
+  "post : ERREUR : photo trop molle (netteté 27, minimum 120) : prends une meilleure photo | texte sur un visage : « 71 points en » | texte sur un visage : « SWISH ». Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
+ ],
+ "refus": [
+  "posts/2026-11-15-1-giannis-34_refuse.png"
+ ]
+}
