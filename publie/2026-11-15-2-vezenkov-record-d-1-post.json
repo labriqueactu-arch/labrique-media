@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-15-2-vezenkov-record-d-1-post.json",
+ "heure_prevue": "2026-11-15T11:50:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18038013437894784",
+   "lien": "https://www.instagram.com/p/DfwmvwWjdAr/",
+   "statut": "publié",
+   "heure": "11:50"
+  },
+  "facebook": {
+   "id": "1473274879194688_122103531987545766",
+   "lien": "https://www.facebook.com/122102273253545766/posts/122103531987545766",
+   "statut": "publié",
+   "heure": "11:50"
+  },
+  "threads": {
+   "id": "17987440614120862",
+   "lien": "https://www.threads.com/@labrique.hoops/post/DfwmyiMmw5V",
+   "statut": "publié",
+   "heure": "11:50"
+  }
+ },
+ "statut": "publié"
+}
