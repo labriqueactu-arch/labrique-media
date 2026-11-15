@@ -3,10 +3,6 @@
  "heure": "2026-11-15T08:00:00+01:00",
  "photos": {
   "post": {
-   "fichier": "File:1 cade cunningham 2024.jpg",
-   "joueur": "Cade Cunningham"
-  },
-  "video": {
    "fichier": "File:Cade Cunningham charging against T. J. McConnell, 2024-11-29.jpg",
    "joueur": "Cade Cunningham",
    "recadrage": [
@@ -15,6 +11,10 @@
     0.77,
     0.88
    ]
+  },
+  "video": {
+   "fichier": "File:1 cade cunningham 2024.jpg",
+   "joueur": "Cade Cunningham"
   }
  },
  "post": {
@@ -33,8 +33,8 @@
   "verdict": "REBOND",
   "photo": "@video",
   "cadre": {
-   "x": 300,
-   "y": 280,
+   "x": 330,
+   "y": 500,
    "l": 700
   },
   "chiffre": "33",
@@ -85,7 +85,7 @@
  },
  "legende": "33 POINTS, ET DETROIT PREND 20 😤🧱\n\nCade Cunningham sort 33 points et 8 passes à Miami. Pas assez : les Pistons perdent 137-117 et le Heat colle 14 contres, à un du record de la franchise. Detroit tombe à 8-4.\n\nVerdict : REBOND. Cade tient la baraque, il lui faut des murs autour. Rendez-vous dans deux mois.\n\nQui doit l'aider à Detroit ? 👀👇\n\nSources : feuille de match ESPN, AP.\n\n#CadeCunningham #Pistons #NBA #NBAFrance #LaBrique",
  "threads": "33 POINTS, ET DETROIT PREND 20\n\nCade Cunningham sort 33 points et 8 passes à Miami, mais les Pistons perdent 137-117. Le Heat colle 14 contres, à un du record de la franchise. Verdict : REBOND. 😤\n\n#NBA",
- "alt": "Visuel La Brique : Cade Cunningham détouré en maillot des Detroit Pistons, verdict REBOND, titre Cade seul contre 14 contres.",
+ "alt": "Visuel La Brique : Cade Cunningham détouré en maillot des Detroit Pistons, ballon en main, verdict REBOND, titre Cade seul contre 14 contres.",
  "legende_reel": "14 CONTRES EN UN MATCH. CADE A TOUT ESSAYÉ 😳🚫\n\nCade Cunningham met 33 points et 8 passes, mais Miami écrase Detroit 137-117 avec 14 contres, à un du record du Heat.\n\nVerdict : REBOND. Ça rentre ou ça brique ? 👀👇\n\nSources : feuille de match ESPN, AP.\n\n#CadeCunningham #Pistons #NBA #NBAFrance #LaBrique",
  "threads_reel": "Cade Cunningham : 33 points, 8 passes. Detroit perd quand même 137-117 à Miami, 14 contres encaissés. Ça rentre ou ça brique ? 👀\n\n#NBA"
 }
