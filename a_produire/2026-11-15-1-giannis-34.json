@@ -1,0 +1,102 @@
+{
+ "id": "2026-11-15-1-giannis-34",
+ "heure": "2026-11-15T08:00:00+01:00",
+ "photos": {
+  "post": {
+   "fichier": "File:Greece vs. Canada, 2024 Summer Olympic men's basketball, 2024-07-27 (29).jpg",
+   "joueur": "Giannis Antetokounmpo",
+   "recadrage": [
+    0.4,
+    0.27,
+    0.86,
+    1.0
+   ]
+  },
+  "video": {
+   "fichier": "File:Greece vs. Canada, 2024 Summer Olympic men's basketball, 2024-07-27 (35).jpg",
+   "joueur": "Giannis Antetokounmpo",
+   "recadrage": [
+    0.47,
+    0.3,
+    0.68,
+    0.8
+   ]
+  }
+ },
+ "post": {
+  "version": 2,
+  "composant": "PostVerdict",
+  "props": {
+   "verdict": "SWISH",
+   "photo": "@post",
+   "titre": "71 points en *deux* soirs",
+   "bandeau": "14.11 · NBA · HEAT 137-117 PISTONS · SOURCES ESPN, AP"
+  }
+ },
+ "video": {
+  "format": "recap",
+  "version": 2,
+  "verdict": "SWISH",
+  "photo": "@video",
+  "cadre": {
+   "x": 300,
+   "y": 480,
+   "l": 760
+  },
+  "chiffre": "34",
+  "prenom": "Giannis",
+  "nom": "Antetokounmpo",
+  "stats": [
+   {
+    "a": 14,
+    "suffixe": " rebonds",
+    "mot": "Quatorze"
+   },
+   {
+    "a": 8,
+    "suffixe": " passes",
+    "mot": "Huit"
+   }
+  ],
+  "fin": "Ça rentre ou ça *brique* ?",
+  "voix": {
+   "id": "Xy5q4w05TJGcKXPWeWoz",
+   "modele": "eleven_v4",
+   "stabilite": 0.0,
+   "style": 0.6,
+   "phrases": [
+    {
+     "role": "accroche",
+     "texte": "Trente quatre points. Et ça continue !",
+     "ecran": "POINTS. ET ÇA *CONTINUE*"
+    },
+    {
+     "role": "joueur",
+     "texte": "Giannis. Quatorze rebonds. Huit passes."
+    },
+    {
+     "role": "contexte",
+     "texte": "Miami partait de zéro sur quatre. Et maintenant ?"
+    },
+    {
+     "role": "verdict",
+     "texte": "Verdict… swish.",
+     "silence_avant": 0.45
+    },
+    {
+     "role": "punch",
+     "texte": "Soixante et onze en deux soirs. Tranquille."
+    },
+    {
+     "role": "question",
+     "texte": "Ça rentre, ou ça brique ?"
+    }
+   ]
+  }
+ },
+ "legende": "71 POINTS EN DEUX SOIRS, GIANNIS RÉGALE MIAMI 🔥🏀\n\nGiannis Antetokounmpo sort 34 points, 14 rebonds et 8 passes contre Detroit. Le Heat gagne 137-117 et enchaîne une 4e victoire de suite. La veille, il en avait déjà mis 37 contre Cleveland.\n\nParti à 0-4, Miami est maintenant à 7-6.\n\nVerdict : SWISH. Le Heat a trouvé sa locomotive, et elle ne freine pas.\n\nMiami peut-il viser le haut de l'Est ? 👀👇\n\nSources : feuille de match ESPN, AP.\n\n#GiannisAntetokounmpo #MiamiHeat #NBA #NBAFrance #LaBrique",
+ "threads": "71 POINTS EN DEUX SOIRS POUR GIANNIS\n\n34 points, 14 rebonds et 8 passes contre Detroit, après 37 la veille contre Cleveland. Le Heat gagne 137-117, 4e victoire de suite, et passe à 7-6 après un départ à 0-4. Verdict : SWISH. 🔥\n\n#NBA",
+ "alt": "Visuel La Brique : Giannis Antetokounmpo détouré en tenue de l'équipe de Grèce, verdict SWISH, titre 71 points en deux soirs.",
+ "legende_reel": "0-4 AU DÉPART. 7-6 CE MATIN. MERCI QUI ? 😳🔥\n\nGiannis Antetokounmpo met 34 points, 14 rebonds et 8 passes, le Heat bat Detroit 137-117 et signe une 4e victoire de suite. 71 points pour lui en deux soirs.\n\nVerdict : SWISH. Ça rentre ou ça brique ? 👀👇\n\nSources : feuille de match ESPN, AP.\n\n#GiannisAntetokounmpo #MiamiHeat #NBA #NBAFrance #LaBrique",
+ "threads_reel": "Giannis : 34 points, 14 rebonds, 8 passes. Le Heat bat Detroit 137-117, 4e victoire de suite. Ça rentre ou ça brique ? 👀\n\n#NBA"
+}
