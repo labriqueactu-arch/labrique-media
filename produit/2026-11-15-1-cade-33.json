@@ -1,12 +1,13 @@
 {
  "id": "2026-11-15-1-cade-33",
  "commande": "a_produire/2026-11-15-1-cade-33.json",
- "date": "2026-11-15T05:04:14",
+ "date": "2026-11-15T05:07:25",
  "ok": false,
  "erreurs": [
-  "vidéo : prise 1 (graine 7) : variation de hauteur 5.23 demi-tons\nERREUR : 0.0 s : texte hors zone sûre : « ET » (60,1348 → 208,1522) ; 1.3 s : texte hors zone sûre : « CLAQUE » (488,1318 → 963,1492) ; 2.2 s : texte sur le visage : « Cunningham » ; 2.3 s : texte sur le visage : « Cunningham » ; 2.5 s : texte sur le visage : « Cunningham » ; 2.7 s : texte sur le visage : « Cunningham » ; 2.8 s : texte sur le visage : « Cunningham » ; 3.0 s : texte sur le visage : « Cunningham ». Corrige la fiche puis relance. Ne publie pas."
+  "post : ERREUR : texte sur un visage : « REBOND ». Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
  ],
  "refus": [
+  "posts/2026-11-15-1-cade-33_refuse.png",
   "posts/videos/2026-11-15-1-cade-33_refuse.jpg"
  ]
 }
