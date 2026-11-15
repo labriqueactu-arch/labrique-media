@@ -1,0 +1,91 @@
+{
+ "id": "2026-11-15-1-cade-33",
+ "heure": "2026-11-15T08:00:00+01:00",
+ "photos": {
+  "post": {
+   "fichier": "File:1 cade cunningham 2024.jpg",
+   "joueur": "Cade Cunningham"
+  },
+  "video": {
+   "fichier": "File:Cade Cunningham charging against T. J. McConnell, 2024-11-29.jpg",
+   "joueur": "Cade Cunningham",
+   "recadrage": [
+    0.48,
+    0.15,
+    0.77,
+    0.88
+   ]
+  }
+ },
+ "post": {
+  "version": 2,
+  "composant": "PostVerdict",
+  "props": {
+   "verdict": "REBOND",
+   "photo": "@post",
+   "titre": "Cade seul contre *14* contres",
+   "bandeau": "14.11 · NBA · HEAT 137-117 PISTONS · SOURCES ESPN, AP"
+  }
+ },
+ "video": {
+  "format": "recap",
+  "version": 2,
+  "verdict": "REBOND",
+  "photo": "@video",
+  "cadre": {
+   "x": 300,
+   "y": 480,
+   "l": 760
+  },
+  "chiffre": "33",
+  "prenom": "Cade",
+  "nom": "Cunningham",
+  "stats": [
+   {
+    "a": 8,
+    "suffixe": " passes",
+    "mot": "Huit"
+   }
+  ],
+  "fin": "Ça rentre ou ça *brique* ?",
+  "voix": {
+   "id": "Xy5q4w05TJGcKXPWeWoz",
+   "modele": "eleven_v4",
+   "stabilite": 0.0,
+   "style": 0.6,
+   "phrases": [
+    {
+     "role": "accroche",
+     "texte": "Trente trois points. Et une claque.",
+     "ecran": "POINTS. ET UNE *CLAQUE*"
+    },
+    {
+     "role": "joueur",
+     "texte": "Cade Cunningham. Huit passes en prime."
+    },
+    {
+     "role": "contexte",
+     "texte": "Quatorze contres de Miami. Et les autres ?"
+    },
+    {
+     "role": "verdict",
+     "texte": "Verdict… rebond.",
+     "silence_avant": 0.45
+    },
+    {
+     "role": "punch",
+     "texte": "Le cercle de Miami ? Fermé à clé."
+    },
+    {
+     "role": "question",
+     "texte": "Ça rentre, ou ça brique ?"
+    }
+   ]
+  }
+ },
+ "legende": "33 POINTS, ET DETROIT PREND 20 😤🧱\n\nCade Cunningham sort 33 points et 8 passes à Miami. Pas assez : les Pistons perdent 137-117 et le Heat colle 14 contres, à un du record de la franchise. Detroit tombe à 8-4.\n\nVerdict : REBOND. Cade tient la baraque, il lui faut des murs autour. Rendez-vous dans deux mois.\n\nQui doit l'aider à Detroit ? 👀👇\n\nSources : feuille de match ESPN, AP.\n\n#CadeCunningham #Pistons #NBA #NBAFrance #LaBrique",
+ "threads": "33 POINTS, ET DETROIT PREND 20\n\nCade Cunningham sort 33 points et 8 passes à Miami, mais les Pistons perdent 137-117. Le Heat colle 14 contres, à un du record de la franchise. Verdict : REBOND. 😤\n\n#NBA",
+ "alt": "Visuel La Brique : Cade Cunningham détouré en maillot des Detroit Pistons, verdict REBOND, titre Cade seul contre 14 contres.",
+ "legende_reel": "14 CONTRES EN UN MATCH. CADE A TOUT ESSAYÉ 😳🚫\n\nCade Cunningham met 33 points et 8 passes, mais Miami écrase Detroit 137-117 avec 14 contres, à un du record du Heat.\n\nVerdict : REBOND. Ça rentre ou ça brique ? 👀👇\n\nSources : feuille de match ESPN, AP.\n\n#CadeCunningham #Pistons #NBA #NBAFrance #LaBrique",
+ "threads_reel": "Cade Cunningham : 33 points, 8 passes. Detroit perd quand même 137-117 à Miami, 14 contres encaissés. Ça rentre ou ça brique ? 👀\n\n#NBA"
+}
