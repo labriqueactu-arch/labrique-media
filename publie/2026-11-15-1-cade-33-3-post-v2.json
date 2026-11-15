@@ -1,0 +1,23 @@
+{
+ "fiche": "2026-11-15-1-cade-33-3-post-v2.json",
+ "heure_prevue": "2026-11-15T08:02:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18114443972235118",
+   "lien": "https://www.instagram.com/p/DfwObKeFLBV/",
+   "statut": "publié",
+   "heure": "08:17"
+  },
+  "facebook": {
+   "id": "1473274879194688_122103391647545766",
+   "lien": "https://www.facebook.com/122102273253545766/posts/122103391647545766",
+   "statut": "publié",
+   "heure": "08:17"
+  },
+  "threads": {
+   "statut": "échec",
+   "erreur": "HTTP 400 sur https://graph.threads.net/v1.0/me/threads_publish : The requested resource does not exist (code 24, sous-code 4279009)"
+  }
+ },
+ "statut": "échec partiel"
+}
