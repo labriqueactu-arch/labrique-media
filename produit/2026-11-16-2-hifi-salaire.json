@@ -1,7 +1,7 @@
 {
  "id": "2026-11-16-2-hifi-salaire",
  "commande": "a_produire/2026-11-16-2-hifi-salaire.json",
- "date": "2026-11-16T08:44:16",
+ "date": "2026-11-16T08:47:28",
  "ok": false,
  "erreurs": [
   "post : ERREUR : héros (joueur et mot géant) sur 58 % de la surface (au moins 60 %). Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
