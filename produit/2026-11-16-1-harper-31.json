@@ -1,11 +1,33 @@
 {
  "id": "2026-11-16-1-harper-31",
  "commande": "a_produire/2026-11-16-1-harper-31.json",
- "date": "2026-11-16T05:05:16",
- "ok": false,
- "erreurs": [
-  "vidéo : s : texte hors zone sûre : « Wembanyama » (311,1156 → 978,1285) ; 1.7 s : texte hors zone sûre : « Wembanyama » (306,1156 → 973,1285) ; 1.8 s : texte hors zone sûre : « Wembanyama » (306,1156 → 973,1285) ; 2.0 s : texte hors zone sûre : « Wembanyama » (306,1156 → 973,1285) ; 2.2 s : texte hors zone sûre : « Wembanyama » (306,1156 → 973,1285) ; 2.3 s : texte hors zone sûre : « Wembanyama » (306,1156 → 973,1285) ; 2.5 s : texte hors zone sûre : « Wembanyama » (306,1156 → 973,1285) ; 2.7 s : texte hors zone sûre : « Wembanyama » (306,1156 → 973,1285). Corrige la fiche puis relance. Ne publie pas."
- ],
+ "date": "2026-11-16T05:08:18",
+ "ok": true,
+ "erreurs": [],
+ "apercu": "produit/2026-11-16-1-harper-31-apercu.jpg",
+ "post": "posts/2026-11-16-1-harper-31.jpg",
+ "reel": "posts/videos/2026-11-16-1-harper-31.mp4",
+ "couverture": "posts/videos/2026-11-16-1-harper-31-cover.jpg",
+ "reel_info": {
+  "duree": 10.633333333333333,
+  "taille_mo": 15.69,
+  "lufs": -14.7,
+  "tempo": 1.0,
+  "debit_mots_s": 3.77,
+  "premier_mot_s": 0.035,
+  "variation_f0_demi_tons": 5.47,
+  "decalage_sous_titres_ms": 32,
+  "rendu_s": 55.4,
+  "dynamisme_moyen": 6.92,
+  "fenetre_min": 2.53,
+  "accroche": 46.32,
+  "ok": true,
+  "sortie": "/home/runner/work/labrique-media/labrique-media/posts/videos/2026-11-16-1-harper-31.mp4"
+ },
+ "publication": {
+  "post": "2026-11-16T07:50:00+01:00",
+  "reel": "2026-11-16T08:00:00+01:00"
+ },
  "refus": [
   "posts/2026-11-16-1-harper-31_refuse.png",
   "posts/videos/2026-11-16-1-harper-31_refuse.jpg"
