@@ -1,11 +1,33 @@
 {
  "id": "2026-11-16-2-hifi-salaire",
  "commande": "a_produire/2026-11-16-2-hifi-salaire.json",
- "date": "2026-11-16T09:07:44",
- "ok": false,
- "erreurs": [
-  "vidéo : prise 1 (graine 7) : variation de hauteur 4.92 demi-tons\nprise 2 (graine 7) : variation de hauteur 4.72 demi-tons\nprise 3 (graine 8) : variation de hauteur 4.35 demi-tons\nprise 4 (graine 8) : variation de hauteur 4.31 demi-tons\nERREUR : voix trop plate : variation de hauteur 4.92 demi-tons (minimum 5.0). Corrige la fiche puis relance. Ne publie pas."
- ],
+ "date": "2026-11-16T09:10:38",
+ "ok": true,
+ "erreurs": [],
+ "apercu": "produit/2026-11-16-2-hifi-salaire-apercu.jpg",
+ "post": "posts/2026-11-16-2-hifi-salaire.jpg",
+ "reel": "posts/videos/2026-11-16-2-hifi-salaire.mp4",
+ "couverture": "posts/videos/2026-11-16-2-hifi-salaire-cover.jpg",
+ "reel_info": {
+  "duree": 10.1,
+  "taille_mo": 11.47,
+  "lufs": -15.2,
+  "tempo": 1.0,
+  "debit_mots_s": 3.77,
+  "premier_mot_s": 0.035,
+  "variation_f0_demi_tons": 5.57,
+  "decalage_sous_titres_ms": 32,
+  "rendu_s": 36.5,
+  "dynamisme_moyen": 6.95,
+  "fenetre_min": 2.29,
+  "accroche": 51.03,
+  "ok": true,
+  "sortie": "/home/runner/work/labrique-media/labrique-media/posts/videos/2026-11-16-2-hifi-salaire.mp4"
+ },
+ "publication": {
+  "post": "2026-11-16T11:50:00+01:00",
+  "reel": "2026-11-16T12:00:00+01:00"
+ },
  "refus": [
   "posts/2026-11-16-2-hifi-salaire_refuse.png",
   "posts/videos/2026-11-16-2-hifi-salaire_refuse.jpg"
