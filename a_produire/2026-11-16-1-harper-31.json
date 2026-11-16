@@ -5,12 +5,16 @@
   "post": {
    "fichier": "File:Dylan Harper in 2026.jpg",
    "joueur": "Dylan Harper",
-   "recadrage": [0.1, 0.0, 0.9, 0.76]
+   "recadrage": [
+    0.1,
+    0.0,
+    0.9,
+    0.76
+   ]
   },
   "video": {
-   "fichier": "File:Dylan Harper in 2026 Western Conference Finals.jpg",
-   "joueur": "Dylan Harper",
-   "recadrage": [0.5, 0.06, 0.95, 0.94]
+   "fichier": "File:Victor Wembanyama San Antonio Spurs 2024.jpg",
+   "joueur": "Victor Wembanyama"
   }
  },
  "post": {
@@ -28,13 +32,25 @@
   "version": 2,
   "verdict": "SWISH",
   "photo": "@video",
-  "cadre": {"x": 330, "y": 440, "l": 720},
-  "chiffre": "31",
-  "prenom": "Dylan",
-  "nom": "Harper",
+  "cadre": {
+   "x": 330,
+   "y": 420,
+   "l": 700
+  },
+  "chiffre": "12",
+  "prenom": "Victor",
+  "nom": "Wembanyama",
   "stats": [
-   {"a": 18, "suffixe": " au 4e QT", "mot": "Dix"},
-   {"a": 9, "suffixe": " rebonds", "mot": "Neuf"}
+   {
+    "a": 26,
+    "suffixe": " pts",
+    "mot": "Vingt"
+   },
+   {
+    "a": 5,
+    "suffixe": " contres",
+    "mot": "Cinq"
+   }
   ],
   "fin": "Ça rentre ou ça *brique* ?",
   "voix": {
@@ -43,18 +59,38 @@
    "stabilite": 0.0,
    "style": 0.6,
    "phrases": [
-    {"role": "accroche", "texte": "Trente et un points. Record perso !", "ecran": "POINTS. RECORD *PERSO*"},
-    {"role": "joueur", "texte": "Dylan Harper. Dix huit dans le dernier quart. Neuf rebonds."},
-    {"role": "contexte", "texte": "Douze victoires de suite. Qui arrête les Spurs ?"},
-    {"role": "verdict", "texte": "Verdict… swish.", "silence_avant": 0.45},
-    {"role": "punch", "texte": "Wemby a trouvé son lieutenant."},
-    {"role": "question", "texte": "Ça rentre, ou ça brique ?"}
+    {
+     "role": "accroche",
+     "texte": "Douze victoires de suite !",
+     "ecran": "VICTOIRES DE *SUITE*"
+    },
+    {
+     "role": "joueur",
+     "texte": "Victor Wembanyama. Vingt six points. Cinq contres."
+    },
+    {
+     "role": "contexte",
+     "texte": "Et Dylan Harper ? Trente et un. Record perso."
+    },
+    {
+     "role": "verdict",
+     "texte": "Verdict… swish.",
+     "silence_avant": 0.45
+    },
+    {
+     "role": "punch",
+     "texte": "San Antonio ne perd plus. Utah, si."
+    },
+    {
+     "role": "question",
+     "texte": "Ça rentre, ou ça brique ?"
+    }
    ]
   }
  },
  "legende": "LE 4E QUART-TEMPS, C'EST SA MAISON 🔥🏀\n\nDylan Harper sort 31 points, record en carrière, dont 18 dans le dernier quart. Neuf rebonds en prime. Les Spurs gagnent 110-102 à Utah et enchaînent une 12e victoire de suite. San Antonio passe à 12-2.\n\nVerdict : SWISH. Le gamin ne tremble pas quand ça brûle.\n\nHarper, futur All-Star ? 👀👇\n\nSources : feuille de match ESPN, AP, Reuters.\n\n#DylanHarper #Spurs #NBA #NBAFrance #LaBrique",
  "threads": "LE 4E QUART-TEMPS, C'EST SA MAISON\n\nDylan Harper : 31 points, record en carrière, dont 18 dans le dernier quart. Les Spurs gagnent 110-102 à Utah, 12e victoire de suite. Verdict : SWISH. 🔥\n\n#NBA",
  "alt": "Visuel La Brique : Dylan Harper détouré en maillot blanc des San Antonio Spurs, verdict SWISH, titre Le 4e quart-temps lui appartient.",
- "legende_reel": "12 VICTOIRES DE SUITE. ET C'EST LE PETIT QUI FINIT LE BOULOT 😤🔥\n\nDylan Harper met 31 points, record en carrière, dont 18 dans le 4e quart-temps. San Antonio gagne 110-102 à Utah et passe à 12-2.\n\nVerdict : SWISH. Ça rentre ou ça brique ? 👀👇\n\nSources : feuille de match ESPN, AP, Reuters.\n\n#DylanHarper #Spurs #NBA #NBAFrance #LaBrique",
- "threads_reel": "Dylan Harper : 31 points dont 18 dans le dernier quart. Les Spurs gagnent à Utah, 12 de suite. Ça rentre ou ça brique ? 👀\n\n#NBA"
+ "legende_reel": "12 DE SUITE. LES SPURS NE S'ARRÊTENT PLUS 🔥🏀\n\nVictor Wembanyama met 26 points et 5 contres, Dylan Harper signe 31 points, record en carrière, dont 18 dans le 4e quart-temps. San Antonio gagne 110-102 à Utah et passe à 12-2.\n\nVerdict : SWISH. Ça rentre ou ça brique ? 👀👇\n\nSources : feuille de match ESPN, AP, Reuters.\n\n#Wembanyama #Spurs #NBA #NBAFrance #LaBrique",
+ "threads_reel": "Spurs, 12 victoires de suite. Wembanyama 26 points et 5 contres, Harper 31 dont 18 dans le dernier quart. Ça rentre ou ça brique ? 👀\n\n#NBA"
 }
