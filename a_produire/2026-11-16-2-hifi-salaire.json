@@ -60,16 +60,16 @@
    "phrases": [
     {
      "role": "accroche",
-     "texte": "Un virgule un million. Trop cher ?",
+     "texte": "Un million par an ?! Trop cher ?",
      "ecran": "MILLION. *TROP CHER* ?"
     },
     {
      "role": "joueur",
-     "texte": "Nadir Hifi. Vingt deux points à Limoges."
+     "texte": "Nadir Hifi ! Vingt deux points à Limoges !"
     },
     {
      "role": "contexte",
-     "texte": "Et le buzzer contre Fenerbahçe, offert ?"
+     "texte": "Et le buzzer contre Fenerbahçe ? Offert ?!"
     },
     {
      "role": "verdict",
@@ -78,7 +78,7 @@
     },
     {
      "role": "punch",
-     "texte": "Le plus gros salaire. Rentabilisé."
+     "texte": "Le plus gros salaire ? Rentabilisé !"
     },
     {
      "role": "question",
