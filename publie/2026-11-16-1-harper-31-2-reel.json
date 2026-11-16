@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-16-1-harper-31-2-reel.json",
+ "heure_prevue": "2026-11-16T08:00:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "17991278418074066",
+   "lien": "https://www.instagram.com/reel/DfyxOckgc3d/",
+   "statut": "publié",
+   "heure": "08:00"
+  },
+  "facebook": {
+   "id": "1481760990167252",
+   "lien": "https://www.facebook.com/reel/1481760990167252/",
+   "statut": "publié",
+   "heure": "08:00"
+  },
+  "threads": {
+   "id": "18257487121308440",
+   "lien": "https://www.threads.com/@labrique.hoops/post/DfyxUNmuWQG",
+   "statut": "publié",
+   "heure": "08:01"
+  }
+ },
+ "statut": "publié"
+}
