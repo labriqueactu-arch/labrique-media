@@ -15,15 +15,11 @@
   "version": 2,
   "composant": "PostChiffre",
   "props": {
-   "chiffre": "1,1",
+   "chiffre": "1,1 M€",
    "verdict": "SWISH",
    "photo": "@post",
-   "titre": "Million par an. Il les *vaut*.",
-   "bandeau": "14.11 · BETCLIC ÉLITE · LIMOGES 82-97 PARIS",
-   "cadre": {
-    "visage": 300,
-    "top": 150
-   }
+   "titre": "Par an. Hifi les *vaut*.",
+   "bandeau": "14.11 · BETCLIC ÉLITE · LIMOGES 82-97 PARIS"
   }
  },
  "video": {
@@ -89,7 +85,7 @@
  },
  "legende": "1,1 MILLION PAR AN. ET IL LES VAUT 💰🏀\n\nNadir Hifi est le joueur le mieux payé de Betclic Élite : 1,1 million d'euros net par an selon Maxi-Basket, seul au-dessus du million. Samedi, il met 22 points et Paris gagne 97-82 à Limoges. Trois jours plus tôt, c'est lui qui crucifiait Fenerbahçe au buzzer en EuroLeague.\n\nVerdict : SWISH. Le plus gros chèque du championnat, et le plus rentable.\n\nTrop payé ou sous-payé ? 👀👇\n\nSources : Maxi-Basket, BasketEurope, L'Équipe, BasketNews.\n\n#NadirHifi #ParisBasketball #EuroLeague #NBAFrance #LaBrique",
  "threads": "HIFI, 1,1 MILLION ET RENTABLE\n\nMeilleur salaire de Betclic Élite (1,1 M€ net par an selon Maxi-Basket). Samedi : 22 points, Paris gagne 97-82 à Limoges et reste leader. Mercredi : le buzzer contre Fenerbahçe. Verdict : SWISH. 💰\n\n#BetclicElite",
- "alt": "Visuel La Brique : Nadir Hifi détouré en maillot noir du Paris Basketball, chiffre 1,1, titre Million par an. Il les vaut, verdict SWISH.",
+ "alt": "Visuel La Brique : Nadir Hifi détouré en maillot noir du Paris Basketball, chiffre 1,1 M€, titre Par an. Hifi les vaut, verdict SWISH.",
  "legende_reel": "LE JOUEUR LE MIEUX PAYÉ DE FRANCE. TROP CHER ? 💰🔥\n\nNadir Hifi touche 1,1 million d'euros net par an selon Maxi-Basket, record de la Betclic Élite. Samedi : 22 points, Paris gagne 97-82 à Limoges et reste leader. Mercredi : le panier au buzzer contre Fenerbahçe en EuroLeague.\n\nVerdict : SWISH. Ça rentre ou ça brique ? 👀👇\n\nSources : Maxi-Basket, BasketEurope, L'Équipe, BasketNews.\n\n#NadirHifi #ParisBasketball #EuroLeague #NBAFrance #LaBrique",
  "threads_reel": "Nadir Hifi, 1,1 million par an, meilleur salaire de Betclic Élite. 22 points à Limoges, buzzer contre Fenerbahçe. Trop cher ? Ça rentre ou ça brique ? 👀\n\n#BetclicElite"
 }
