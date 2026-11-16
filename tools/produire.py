@@ -24,7 +24,7 @@ une photo ne sert qu'une fois. Les crédits sont ajoutés à la fin des légende
 Sorties : posts/<id>.jpg, posts/videos/<id>.mp4 et -cover.jpg, a_publier/<id>-post.json et -reel.json,
 produit/<id>.json (rapport, avec les erreurs à corriger dans la commande si le rendu est refusé).
 """
-import datetime, json, re, subprocess, sys, time, urllib.parse, urllib.request
+import datetime, hashlib, json, re, subprocess, sys, time, urllib.parse, urllib.request
 from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent
@@ -72,7 +72,10 @@ def preparer_photo(cle, spec, id_):
     e = registre.conflit(None, source, post=id_)  # un nouveau rendu du même post reprend ses photos
     if e:
         raise Refus(f"photo « {cle} » : {registre.message(e)}")
-    dossier = RACINE / "banque" / "photos" / re.sub(r"[^a-z0-9]+", "-", info["titre"][5:].lower()).strip("-")[:80]
+    nom = re.sub(r"[^a-z0-9]+", "-", info["titre"][5:].lower()).strip("-")
+    if len(nom) > 80:  # deux photos d'une même série ne partagent jamais un dossier tronqué
+        nom = nom[:71].rstrip("-") + "-" + hashlib.sha1(info["titre"].encode()).hexdigest()[:8]
+    dossier = RACINE / "banque" / "photos" / nom
     dossier.mkdir(parents=True, exist_ok=True)
     orig = dossier / "original.jpg"
     if not orig.exists():

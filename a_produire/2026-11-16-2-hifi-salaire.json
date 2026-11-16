@@ -19,7 +19,11 @@
    "verdict": "SWISH",
    "photo": "@post",
    "titre": "Par an. Hifi les *vaut*.",
-   "bandeau": "14.11 · BETCLIC ÉLITE · LIMOGES 82-97 PARIS"
+   "bandeau": "14.11 · BETCLIC ÉLITE · LIMOGES 82-97 PARIS",
+   "cadre": {
+    "cx": 470,
+    "top": 190
+   }
   }
  },
  "video": {
