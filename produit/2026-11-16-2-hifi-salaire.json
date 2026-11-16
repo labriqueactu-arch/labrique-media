@@ -1,10 +1,10 @@
 {
  "id": "2026-11-16-2-hifi-salaire",
  "commande": "a_produire/2026-11-16-2-hifi-salaire.json",
- "date": "2026-11-16T08:47:28",
+ "date": "2026-11-16T08:50:50",
  "ok": false,
  "erreurs": [
-  "post : ERREUR : héros (joueur et mot géant) sur 58 % de la surface (au moins 60 %). Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
+  "post : ERREUR : module sur un visage : lb-sceau-verdict signe marque. Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
  ],
  "refus": [
   "posts/2026-11-16-2-hifi-salaire_refuse.png"
