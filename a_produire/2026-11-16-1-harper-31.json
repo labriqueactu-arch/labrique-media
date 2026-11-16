@@ -3,18 +3,18 @@
  "heure": "2026-11-16T08:00:00+01:00",
  "photos": {
   "post": {
-   "fichier": "File:Dylan Harper in 2026.jpg",
-   "joueur": "Dylan Harper",
-   "recadrage": [
-    0.1,
-    0.0,
-    0.9,
-    0.76
-   ]
-  },
-  "video": {
    "fichier": "File:Victor Wembanyama San Antonio Spurs 2024.jpg",
    "joueur": "Victor Wembanyama"
+  },
+  "video": {
+   "fichier": "File:Victor Wembanyama, July 2024.jpg",
+   "joueur": "Victor Wembanyama",
+   "recadrage": [
+    0.22,
+    0.0,
+    0.9,
+    1.0
+   ]
   }
  },
  "post": {
@@ -23,7 +23,7 @@
   "props": {
    "verdict": "SWISH",
    "photo": "@post",
-   "titre": "Le 4e quart-temps lui *appartient*",
+   "titre": "Les Spurs ne savent plus *perdre*",
    "bandeau": "15.11 · NBA · JAZZ 102-110 SPURS · SOURCES ESPN, AP, REUTERS"
   }
  },
@@ -88,9 +88,9 @@
    ]
   }
  },
- "legende": "LE 4E QUART-TEMPS, C'EST SA MAISON 🔥🏀\n\nDylan Harper sort 31 points, record en carrière, dont 18 dans le dernier quart. Neuf rebonds en prime. Les Spurs gagnent 110-102 à Utah et enchaînent une 12e victoire de suite. San Antonio passe à 12-2.\n\nVerdict : SWISH. Le gamin ne tremble pas quand ça brûle.\n\nHarper, futur All-Star ? 👀👇\n\nSources : feuille de match ESPN, AP, Reuters.\n\n#DylanHarper #Spurs #NBA #NBAFrance #LaBrique",
- "threads": "LE 4E QUART-TEMPS, C'EST SA MAISON\n\nDylan Harper : 31 points, record en carrière, dont 18 dans le dernier quart. Les Spurs gagnent 110-102 à Utah, 12e victoire de suite. Verdict : SWISH. 🔥\n\n#NBA",
- "alt": "Visuel La Brique : Dylan Harper détouré en maillot blanc des San Antonio Spurs, verdict SWISH, titre Le 4e quart-temps lui appartient.",
+ "legende": "12 DE SUITE. LES SPURS ONT OUBLIÉ COMMENT ON PERD 🔥🏀\n\nSan Antonio gagne 110-102 à Utah et passe à 12-2. Victor Wembanyama met 26 points et 5 contres. Dylan Harper finit le boulot : 31 points, record en carrière, dont 18 dans le 4e quart-temps.\n\nVerdict : SWISH. Wemby a enfin un lieutenant qui ne tremble pas.\n\nQui peut arrêter les Spurs ? 👀👇\n\nSources : feuille de match ESPN, AP, Reuters.\n\n#Wembanyama #Spurs #NBA #NBAFrance #LaBrique",
+ "threads": "12 DE SUITE POUR LES SPURS\n\nSan Antonio gagne 110-102 à Utah. Wembanyama 26 points et 5 contres, Dylan Harper 31 dont 18 dans le dernier quart, record en carrière. Verdict : SWISH. 🔥\n\n#NBA",
+ "alt": "Visuel La Brique : Victor Wembanyama détouré en maillot noir des San Antonio Spurs, verdict SWISH, titre Les Spurs ne savent plus perdre.",
  "legende_reel": "12 DE SUITE. LES SPURS NE S'ARRÊTENT PLUS 🔥🏀\n\nVictor Wembanyama met 26 points et 5 contres, Dylan Harper signe 31 points, record en carrière, dont 18 dans le 4e quart-temps. San Antonio gagne 110-102 à Utah et passe à 12-2.\n\nVerdict : SWISH. Ça rentre ou ça brique ? 👀👇\n\nSources : feuille de match ESPN, AP, Reuters.\n\n#Wembanyama #Spurs #NBA #NBAFrance #LaBrique",
  "threads_reel": "Spurs, 12 victoires de suite. Wembanyama 26 points et 5 contres, Harper 31 dont 18 dans le dernier quart. Ça rentre ou ça brique ? 👀\n\n#NBA"
 }
