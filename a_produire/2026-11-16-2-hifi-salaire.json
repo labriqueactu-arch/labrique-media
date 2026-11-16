@@ -19,7 +19,11 @@
    "verdict": "SWISH",
    "photo": "@post",
    "titre": "Million par an. Il les *vaut*.",
-   "bandeau": "14.11 · BETCLIC ÉLITE · LIMOGES 82-97 PARIS"
+   "bandeau": "14.11 · BETCLIC ÉLITE · LIMOGES 82-97 PARIS",
+   "cadre": {
+    "visage": 300,
+    "top": 150
+   }
   }
  },
  "video": {
@@ -27,13 +31,25 @@
   "version": 2,
   "verdict": "SWISH",
   "photo": "@video",
-  "cadre": {"x": 330, "y": 420, "l": 760},
+  "cadre": {
+   "x": 330,
+   "y": 420,
+   "l": 760
+  },
   "chiffre": "1,1",
   "prenom": "Nadir",
   "nom": "Hifi",
   "stats": [
-   {"a": 22, "suffixe": " pts", "mot": "Vingt"},
-   {"a": 97, "suffixe": "-82", "mot": "Limoges"}
+   {
+    "a": 22,
+    "suffixe": " pts",
+    "mot": "Vingt"
+   },
+   {
+    "a": 97,
+    "suffixe": "-82",
+    "mot": "Limoges"
+   }
   ],
   "fin": "Ça rentre ou ça *brique* ?",
   "voix": {
@@ -42,12 +58,32 @@
    "stabilite": 0.0,
    "style": 0.6,
    "phrases": [
-    {"role": "accroche", "texte": "Un virgule un million. Trop cher ?", "ecran": "MILLION PAR AN. *TROP CHER* ?"},
-    {"role": "joueur", "texte": "Nadir Hifi. Vingt deux points à Limoges."},
-    {"role": "contexte", "texte": "Et le buzzer contre Fenerbahçe, offert ?"},
-    {"role": "verdict", "texte": "Verdict… swish.", "silence_avant": 0.45},
-    {"role": "punch", "texte": "Le plus gros salaire. Rentabilisé."},
-    {"role": "question", "texte": "Ça rentre, ou ça brique ?"}
+    {
+     "role": "accroche",
+     "texte": "Un virgule un million. Trop cher ?",
+     "ecran": "MILLION PAR AN. *TROP CHER* ?"
+    },
+    {
+     "role": "joueur",
+     "texte": "Nadir Hifi. Vingt deux points à Limoges."
+    },
+    {
+     "role": "contexte",
+     "texte": "Et le buzzer contre Fenerbahçe, offert ?"
+    },
+    {
+     "role": "verdict",
+     "texte": "Verdict… swish.",
+     "silence_avant": 0.45
+    },
+    {
+     "role": "punch",
+     "texte": "Le plus gros salaire. Rentabilisé."
+    },
+    {
+     "role": "question",
+     "texte": "Ça rentre, ou ça brique ?"
+    }
    ]
   }
  },
