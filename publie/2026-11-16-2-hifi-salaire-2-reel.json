@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-16-2-hifi-salaire-2-reel.json",
+ "heure_prevue": "2026-11-16T12:00:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18123500048515710",
+   "lien": "https://www.instagram.com/reel/DfzMwKtil2h/",
+   "statut": "publié",
+   "heure": "12:01"
+  },
+  "facebook": {
+   "id": "1005175095984696",
+   "lien": "https://www.facebook.com/reel/1005175095984696/",
+   "statut": "publié",
+   "heure": "12:01"
+  },
+  "threads": {
+   "id": "18137355271741097",
+   "lien": "https://www.threads.com/@labrique.hoops/post/DfzM2gHy1Wc",
+   "statut": "publié",
+   "heure": "12:02"
+  }
+ },
+ "statut": "publié"
+}
