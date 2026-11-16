@@ -1,0 +1,10 @@
+{
+ "id": "2026-11-16-1-harper-31",
+ "commande": "a_produire/2026-11-16-1-harper-31.json",
+ "date": "2026-11-16T04:55:34",
+ "ok": false,
+ "erreurs": [
+  "photo « video » : le joueur touche le bord gauche de la photo, le recadrage le coupe. Élargis le recadrage (tête et épaules entières) ou prends une autre photo."
+ ],
+ "refus": []
+}
