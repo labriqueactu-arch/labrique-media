@@ -1,10 +1,10 @@
 {
  "id": "2026-11-16-1-harper-31",
  "commande": "a_produire/2026-11-16-1-harper-31.json",
- "date": "2026-11-16T05:00:38",
+ "date": "2026-11-16T05:02:39",
  "ok": false,
  "erreurs": [
-  "post : ERREUR : photo trop molle (netteté 54, minimum 120) : prends une meilleure photo. Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
+  "post : ERREUR : photo trop molle (netteté 103, minimum 120) : prends une meilleure photo. Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
  ],
  "refus": [
   "posts/2026-11-16-1-harper-31_refuse.png"
