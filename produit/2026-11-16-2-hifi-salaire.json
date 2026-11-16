@@ -1,12 +1,13 @@
 {
  "id": "2026-11-16-2-hifi-salaire",
  "commande": "a_produire/2026-11-16-2-hifi-salaire.json",
- "date": "2026-11-16T08:59:49",
+ "date": "2026-11-16T09:03:22",
  "ok": false,
  "erreurs": [
-  "photo « video » : le joueur touche le bord gauche de la photo, le recadrage le coupe. Élargis le recadrage (tête et épaules entières) ou prends une autre photo."
+  "vidéo : prise 1 (graine 7) : variation de hauteur 4.75 demi-tons\nprise 2 (graine 7) : variation de hauteur 5.05 demi-tons\nERREUR : 0.7 s : texte hors zone sûre : « AN. » (762,1219 → 942,1373). Corrige la fiche puis relance. Ne publie pas."
  ],
  "refus": [
-  "posts/2026-11-16-2-hifi-salaire_refuse.png"
+  "posts/2026-11-16-2-hifi-salaire_refuse.png",
+  "posts/videos/2026-11-16-2-hifi-salaire_refuse.jpg"
  ]
 }
