@@ -1,10 +1,12 @@
 {
  "id": "2026-11-16-1-harper-31",
  "commande": "a_produire/2026-11-16-1-harper-31.json",
- "date": "2026-11-16T04:57:23",
+ "date": "2026-11-16T05:00:38",
  "ok": false,
  "erreurs": [
-  "photo « video » : le joueur touche le bord gauche de la photo, le recadrage le coupe. Élargis le recadrage (tête et épaules entières) ou prends une autre photo."
+  "post : ERREUR : photo trop molle (netteté 54, minimum 120) : prends une meilleure photo. Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
  ],
- "refus": []
+ "refus": [
+  "posts/2026-11-16-1-harper-31_refuse.png"
+ ]
 }
