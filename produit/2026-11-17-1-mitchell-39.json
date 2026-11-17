@@ -1,11 +1,33 @@
 {
  "id": "2026-11-17-1-mitchell-39",
  "commande": "a_produire/2026-11-17-1-mitchell-39.json",
- "date": "2026-11-17T04:57:44",
- "ok": false,
- "erreurs": [
-  "vidéo : prise 1 (graine 7) : variation de hauteur 5.62 demi-tons\nERREUR : 2.8 s : texte hors zone sûre : « 0 » (-11,1421 → 37,1505) ; 2.8 s : texte hors zone sûre : « interceptions » (37,1421 → 734,1505). Corrige la fiche puis relance. Ne publie pas."
- ],
+ "date": "2026-11-17T05:01:56",
+ "ok": true,
+ "erreurs": [],
+ "apercu": "produit/2026-11-17-1-mitchell-39-apercu.jpg",
+ "post": "posts/2026-11-17-1-mitchell-39.jpg",
+ "reel": "posts/videos/2026-11-17-1-mitchell-39.mp4",
+ "couverture": "posts/videos/2026-11-17-1-mitchell-39-cover.jpg",
+ "reel_info": {
+  "duree": 11.0,
+  "taille_mo": 14.85,
+  "lufs": -15.0,
+  "tempo": 1.175,
+  "debit_mots_s": 3.55,
+  "premier_mot_s": 0.035,
+  "variation_f0_demi_tons": 5.67,
+  "decalage_sous_titres_ms": 32,
+  "rendu_s": 55.5,
+  "dynamisme_moyen": 6.96,
+  "fenetre_min": 2.57,
+  "accroche": 43.76,
+  "ok": true,
+  "sortie": "/home/runner/work/labrique-media/labrique-media/posts/videos/2026-11-17-1-mitchell-39.mp4"
+ },
+ "publication": {
+  "post": "2026-11-17T07:50:00+01:00",
+  "reel": "2026-11-17T08:00:00+01:00"
+ },
  "refus": [
   "posts/videos/2026-11-17-1-mitchell-39_refuse.jpg"
  ]
