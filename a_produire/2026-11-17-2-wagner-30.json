@@ -60,7 +60,7 @@
    "phrases": [
     {
      "role": "accroche",
-     "texte": "Quatre matchs à trente points. Sérieux ?",
+     "texte": "Quatre matchs à trente. Sérieux ?",
      "ecran": "MATCHS À 30. *SÉRIEUX* ?"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
      "role": "contexte",
-     "texte": "Et Boston, premier de l'Est, tombe aussi ?"
+     "texte": "Et Boston tombe aussi ?"
     },
     {
      "role": "verdict",
@@ -78,7 +78,7 @@
     },
     {
      "role": "punch",
-     "texte": "Orlando a trouvé son patron. Il est allemand."
+     "texte": "Orlando a un patron. Allemand."
     },
     {
      "role": "question",
