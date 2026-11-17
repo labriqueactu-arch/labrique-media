@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-17-2-wagner-30-2-reel.json",
+ "heure_prevue": "2026-11-17T12:00:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18121318372952744",
+   "lien": "https://www.instagram.com/reel/Df1xfEPEl08/",
+   "statut": "publié",
+   "heure": "12:00"
+  },
+  "facebook": {
+   "id": "1398657279009422",
+   "lien": "https://www.facebook.com/reel/1398657279009422/",
+   "statut": "publié",
+   "heure": "12:00"
+  },
+  "threads": {
+   "id": "18088040573406830",
+   "lien": "https://www.threads.com/@labrique.hoops/post/Df1xlbhpTi7",
+   "statut": "publié",
+   "heure": "12:01"
+  }
+ },
+ "statut": "publié"
+}

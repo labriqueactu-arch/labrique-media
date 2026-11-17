@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-17-2-wagner-30-1-post.json",
+ "heure_prevue": "2026-11-17T11:50:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18127272940922278",
+   "lien": "https://www.instagram.com/p/Df1wVk0k26w/",
+   "statut": "publié",
+   "heure": "11:50"
+  },
+  "facebook": {
+   "id": "1473274879194688_122105413977545766",
+   "lien": "https://www.facebook.com/122102273253545766/posts/122105413977545766",
+   "statut": "publié",
+   "heure": "11:50"
+  },
+  "threads": {
+   "id": "18650161777061543",
+   "lien": "https://www.threads.com/@labrique.hoops/post/Df1wXhIm-nl",
+   "statut": "publié",
+   "heure": "11:50"
+  }
+ },
+ "statut": "publié"
+}
