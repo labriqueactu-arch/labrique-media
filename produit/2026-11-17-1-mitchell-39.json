@@ -1,10 +1,12 @@
 {
  "id": "2026-11-17-1-mitchell-39",
  "commande": "a_produire/2026-11-17-1-mitchell-39.json",
- "date": "2026-11-17T04:55:26",
+ "date": "2026-11-17T04:57:44",
  "ok": false,
  "erreurs": [
-  "photo « video » : le joueur touche le bord gauche de la photo, le recadrage le coupe. Élargis le recadrage (tête et épaules entières) ou prends une autre photo."
+  "vidéo : prise 1 (graine 7) : variation de hauteur 5.62 demi-tons\nERREUR : 2.8 s : texte hors zone sûre : « 0 » (-11,1421 → 37,1505) ; 2.8 s : texte hors zone sûre : « interceptions » (37,1421 → 734,1505). Corrige la fiche puis relance. Ne publie pas."
  ],
- "refus": []
+ "refus": [
+  "posts/videos/2026-11-17-1-mitchell-39_refuse.jpg"
+ ]
 }
