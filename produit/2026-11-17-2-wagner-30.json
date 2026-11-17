@@ -1,10 +1,10 @@
 {
  "id": "2026-11-17-2-wagner-30",
  "commande": "a_produire/2026-11-17-2-wagner-30.json",
- "date": "2026-11-17T08:48:14",
+ "date": "2026-11-17T08:50:08",
  "ok": false,
  "erreurs": [
-  "post : ERREUR : héros (joueur et mot géant) sur 54 % de la surface (au moins 60 %). Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
+  "vidéo : prise 1 (graine 7) : variation de hauteur 5.12 demi-tons\nERREUR : durée 11.63 s hors de la plage 8.0 à 11.5 s : raccourcis le script. Corrige la fiche puis relance. Ne publie pas."
  ],
  "refus": [
   "posts/2026-11-17-2-wagner-30_refuse.png"
