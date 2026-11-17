@@ -1,0 +1,59 @@
+{
+ "id": "2026-11-17-2-wagner-30",
+ "heure": "2026-11-17T12:00:00+01:00",
+ "photos": {
+  "post": {
+   "fichier": "File:2023-08-09 Deutschland gegen Kanada (Basketball-Länderspiel) by Sandro Halank–099.jpg",
+   "joueur": "Franz Wagner"
+  },
+  "video": {
+   "fichier": "File:2023-08-09 Deutschland gegen Kanada (Basketball-Länderspiel) by Sandro Halank–105.jpg",
+   "joueur": "Franz Wagner"
+  }
+ },
+ "post": {
+  "version": 2,
+  "composant": "PostChiffre",
+  "props": {
+   "chiffre": "4",
+   "verdict": "SWISH",
+   "photo": "@post",
+   "titre": "Matchs à 30. Franz *régale*.",
+   "bandeau": "16.11 · NBA · MAGIC 115-105 CELTICS"
+  }
+ },
+ "video": {
+  "format": "recap",
+  "version": 2,
+  "verdict": "SWISH",
+  "photo": "@video",
+  "cadre": {"x": 250, "y": 430, "l": 900},
+  "chiffre": "4",
+  "prenom": "Franz",
+  "nom": "Wagner",
+  "stats": [
+   {"a": 35, "suffixe": " pts", "mot": "Trente"},
+   {"a": 12, "suffixe": " passes", "mot": "Douze"}
+  ],
+  "fin": "Ça rentre ou ça *brique* ?",
+  "voix": {
+   "id": "Xy5q4w05TJGcKXPWeWoz",
+   "modele": "eleven_v4",
+   "stabilite": 0.0,
+   "style": 0.6,
+   "phrases": [
+    {"role": "accroche", "texte": "Quatre matchs à trente points. Sérieux ?", "ecran": "MATCHS À 30. *SÉRIEUX* ?"},
+    {"role": "joueur", "texte": "Franz Wagner. Trente cinq points. Douze passes."},
+    {"role": "contexte", "texte": "Et Boston, premier de l'Est, tombe aussi ?"},
+    {"role": "verdict", "texte": "Verdict… swish.", "silence_avant": 0.45},
+    {"role": "punch", "texte": "Orlando a trouvé son patron. Il est allemand."},
+    {"role": "question", "texte": "Ça rentre, ou ça brique ?"}
+   ]
+  }
+ },
+ "legende": "FRANZ WAGNER A PRIS LES CLÉS D'ORLANDO 🇩🇪🔥\n\nQuatre matchs de suite à 30 points ou plus, dont 35 points et 12 passes contre Milwaukee. Cette nuit à Boston, 21 points et 9 passes, et le Magic fait tomber le leader de l'Est 115-105. Quatrième victoire de suite, Orlando remonte à 6-7 sans Paolo Banchero, blessé à la cheville.\n\nVerdict : SWISH. Franz tient la baraque, et le Magic recommence à gagner.\n\nWagner All-Star cette saison, tu signes ? 👀👇\n\nSources : Orlando Magic, AP, AFP, Sports Illustrated.\n\n#FranzWagner #OrlandoMagic #NBA #NBAFrance #LaBrique",
+ "threads": "FRANZ WAGNER PREND LES CLÉS\n\nQuatre matchs de suite à 30 points, puis 21 points et 9 passes pour faire tomber Boston 115-105. Orlando enchaîne 4 victoires et remonte à 6-7 sans Banchero. Verdict : SWISH. 🇩🇪🔥\n\n#NBA",
+ "alt": "Visuel La Brique : Franz Wagner détouré en maillot blanc de l'équipe d'Allemagne, chiffre 4, verdict SWISH, titre Matchs à 30, Franz régale.",
+ "legende_reel": "4 MATCHS DE SUITE À 30 POINTS. QUI L'AVAIT VU VENIR ? 🇩🇪🔥\n\nFranz Wagner enchaîne quatre matchs à 30 points ou plus, dont 35 points et 12 passes contre Milwaukee. Puis Orlando va battre Boston, leader de l'Est, 115-105 : quatrième victoire de suite, sans Paolo Banchero.\n\nVerdict : SWISH. Ça rentre ou ça brique ? 👀👇\n\nSources : Orlando Magic, AP, AFP, Sports Illustrated.\n\n#FranzWagner #OrlandoMagic #NBA #NBAFrance #LaBrique",
+ "threads_reel": "Franz Wagner : quatre matchs de suite à 30 points, 35 et 12 passes contre Milwaukee. Orlando bat Boston 115-105 et enchaîne 4 victoires. Ça rentre ou ça brique ? 👀\n\n#NBA"
+}
