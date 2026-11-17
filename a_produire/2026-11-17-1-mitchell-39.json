@@ -33,7 +33,7 @@
   "nom": "Mitchell",
   "stats": [
    {"a": 16, "suffixe": "/25 au tir", "mot": "Seize"},
-   {"a": 3, "suffixe": " interceptions", "mot": "Trois"}
+   {"a": 3, "suffixe": " interc.", "mot": "Trois"}
   ],
   "fin": "Ça rentre ou ça *brique* ?",
   "voix": {
