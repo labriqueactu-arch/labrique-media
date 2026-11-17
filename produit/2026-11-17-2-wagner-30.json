@@ -1,11 +1,33 @@
 {
  "id": "2026-11-17-2-wagner-30",
  "commande": "a_produire/2026-11-17-2-wagner-30.json",
- "date": "2026-11-17T08:50:08",
- "ok": false,
- "erreurs": [
-  "vidéo : prise 1 (graine 7) : variation de hauteur 5.12 demi-tons\nERREUR : durée 11.63 s hors de la plage 8.0 à 11.5 s : raccourcis le script. Corrige la fiche puis relance. Ne publie pas."
- ],
+ "date": "2026-11-17T08:53:37",
+ "ok": true,
+ "erreurs": [],
+ "apercu": "produit/2026-11-17-2-wagner-30-apercu.jpg",
+ "post": "posts/2026-11-17-2-wagner-30.jpg",
+ "reel": "posts/videos/2026-11-17-2-wagner-30.mp4",
+ "couverture": "posts/videos/2026-11-17-2-wagner-30-cover.jpg",
+ "reel_info": {
+  "duree": 9.8,
+  "taille_mo": 11.65,
+  "lufs": -14.3,
+  "tempo": 1.152,
+  "debit_mots_s": 3.53,
+  "premier_mot_s": 0.035,
+  "variation_f0_demi_tons": 5.16,
+  "decalage_sous_titres_ms": 32,
+  "rendu_s": 43.9,
+  "dynamisme_moyen": 6.44,
+  "fenetre_min": 1.93,
+  "accroche": 42.43,
+  "ok": true,
+  "sortie": "/home/runner/work/labrique-media/labrique-media/posts/videos/2026-11-17-2-wagner-30.mp4"
+ },
+ "publication": {
+  "post": "2026-11-17T11:50:00+01:00",
+  "reel": "2026-11-17T12:00:00+01:00"
+ },
  "refus": [
   "posts/2026-11-17-2-wagner-30_refuse.png"
  ]
