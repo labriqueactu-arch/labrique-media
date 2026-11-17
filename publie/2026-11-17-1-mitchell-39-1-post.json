@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-17-1-mitchell-39-1-post.json",
+ "heure_prevue": "2026-11-17T07:50:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18107008067527173",
+   "lien": "https://www.instagram.com/p/Df1U3sAFzGL/",
+   "statut": "publié",
+   "heure": "07:50"
+  },
+  "facebook": {
+   "id": "1473274879194688_122105238165545766",
+   "lien": "https://www.facebook.com/122102273253545766/posts/122105238165545766",
+   "statut": "publié",
+   "heure": "07:50"
+  },
+  "threads": {
+   "id": "18103235294382294",
+   "lien": "https://www.threads.com/@labrique.hoops/post/Df1U64zFSOk",
+   "statut": "publié",
+   "heure": "07:50"
+  }
+ },
+ "statut": "publié"
+}

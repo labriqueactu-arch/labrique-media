@@ -1,0 +1,25 @@
+{
+ "fiche": "2026-11-17-1-mitchell-39-2-reel.json",
+ "heure_prevue": "2026-11-17T08:00:00+01:00",
+ "reseaux": {
+  "instagram": {
+   "id": "18105136418377133",
+   "lien": "https://www.instagram.com/reel/Df1WBRljb98/",
+   "statut": "publié",
+   "heure": "08:00"
+  },
+  "facebook": {
+   "id": "4630028210650570",
+   "lien": "https://www.facebook.com/reel/4630028210650570/",
+   "statut": "publié",
+   "heure": "08:00"
+  },
+  "threads": {
+   "id": "18134679770499181",
+   "lien": "https://www.threads.com/@labrique.hoops/post/Df1WHRUBhHK",
+   "statut": "publié",
+   "heure": "08:01"
+  }
+ },
+ "statut": "publié"
+}
