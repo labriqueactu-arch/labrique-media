@@ -1,0 +1,12 @@
+{
+ "id": "2026-11-17-2-wagner-30",
+ "commande": "a_produire/2026-11-17-2-wagner-30.json",
+ "date": "2026-11-17T08:48:14",
+ "ok": false,
+ "erreurs": [
+  "post : ERREUR : héros (joueur et mot géant) sur 54 % de la surface (au moins 60 %). Corrige la fiche (cadre, photo, textes) puis relance. Ne publie pas."
+ ],
+ "refus": [
+  "posts/2026-11-17-2-wagner-30_refuse.png"
+ ]
+}
