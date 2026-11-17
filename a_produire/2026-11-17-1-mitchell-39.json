@@ -1,0 +1,59 @@
+{
+ "id": "2026-11-17-1-mitchell-39",
+ "heure": "2026-11-17T08:00:00+01:00",
+ "photos": {
+  "post": {
+   "fichier": "File:Donovan Mitchell cavs 2023 (cropped2).jpg",
+   "joueur": "Donovan Mitchell"
+  },
+  "video": {
+   "fichier": "File:Donovan Mitchell Cavs Playoffs.jpg",
+   "joueur": "Donovan Mitchell",
+   "recadrage": [0.25, 0.22, 0.88, 0.84]
+  }
+ },
+ "post": {
+  "version": 2,
+  "composant": "PostVerdict",
+  "props": {
+   "verdict": "REBOND",
+   "photo": "@post",
+   "titre": "Mitchell sauve des Cavs *moyens*",
+   "bandeau": "16.11 · NBA · BULLS 115-126 CAVS"
+  }
+ },
+ "video": {
+  "format": "recap",
+  "version": 2,
+  "verdict": "REBOND",
+  "photo": "@video",
+  "cadre": {"x": 250, "y": 430, "l": 900},
+  "chiffre": "39",
+  "prenom": "Donovan",
+  "nom": "Mitchell",
+  "stats": [
+   {"a": 16, "suffixe": "/25 au tir", "mot": "Seize"},
+   {"a": 3, "suffixe": " interceptions", "mot": "Trois"}
+  ],
+  "fin": "Ça rentre ou ça *brique* ?",
+  "voix": {
+   "id": "Xy5q4w05TJGcKXPWeWoz",
+   "modele": "eleven_v4",
+   "stabilite": 0.0,
+   "style": 0.6,
+   "phrases": [
+    {"role": "accroche", "texte": "Trente neuf points. Ça suffit ?", "ecran": "POINTS. ÇA *SUFFIT* ?"},
+    {"role": "joueur", "texte": "Donovan Mitchell. Seize sur vingt cinq. Trois interceptions."},
+    {"role": "contexte", "texte": "Mais sans Mobley, qui l'aide vraiment ?"},
+    {"role": "verdict", "texte": "Verdict… rebond.", "silence_avant": 0.45},
+    {"role": "punch", "texte": "Mitchell brille. Huit sept, ça brille moins."},
+    {"role": "question", "texte": "Ça rentre, ou ça brique ?"}
+   ]
+  }
+ },
+ "legende": "39 POUR SPIDA, ET DES CAVS QUI CHERCHENT ENCORE LEUR NIVEAU 🕷️🏀\n\nDonovan Mitchell plante 39 points à 16/25 avec 3 interceptions. Cleveland bat Chicago 126-115 sans Evan Mobley, blessé, et repasse à 8-7. James Harden ajoute 9 points et 10 passes.\n\nVerdict : REBOND. Mitchell fait le boulot, mais 8-7 à la mi-novembre, c'est léger pour Cleveland. Rendez-vous en janvier.\n\nLes Cavs peuvent encore jouer le haut de l'Est ? 👀👇\n\nSources : feuille de match ESPN, AP, Field Level Media.\n\n#DonovanMitchell #Cavaliers #NBA #NBAFrance #LaBrique",
+ "threads": "39 POUR SPIDA\n\nDonovan Mitchell met 39 points à 16/25, Cleveland bat Chicago 126-115 sans Evan Mobley et repasse à 8-7. Verdict : REBOND. Mitchell tape fort, l'équipe beaucoup moins. 🕷️\n\n#NBA",
+ "alt": "Visuel La Brique : Donovan Mitchell détouré en maillot blanc des Cavaliers, verdict REBOND, titre Mitchell sauve des Cavs moyens.",
+ "legende_reel": "39 POINTS. ET ÇA SUFFIT POUR CLEVELAND ? 🕷️🔥\n\nDonovan Mitchell sort 39 points à 16/25 et 3 interceptions contre Chicago. Les Cavs gagnent 126-115 sans Evan Mobley et remontent à 8-7.\n\nVerdict : REBOND. Ça rentre ou ça brique ? 👀👇\n\nSources : feuille de match ESPN, AP, Field Level Media.\n\n#DonovanMitchell #Cavaliers #NBA #NBAFrance #LaBrique",
+ "threads_reel": "Donovan Mitchell, 39 points à 16/25 contre Chicago. Cleveland gagne 126-115 et remonte à 8-7. Ça rentre ou ça brique ? 👀\n\n#NBA"
+}
